@@ -1,0 +1,30 @@
+{% block content %}
+    <h1 class="menu">Automotive Emission section</h1>
+    
+    <table class="demo">
+        <caption style="caption-side:top">
+            <img src="{{ url_for('automotive.static', filename='images/vw4.jpg') }}" alt="Automotive Image">
+            Emission Test List
+        </caption>
+        <tbody>
+            <thead>
+                <tr>
+                  <th>Test</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="/automotive/emission/r10">R 10 rev.6</a></td>
+                  <td>cell2_1</td>
+                </tr>
+                <tr>
+                  <td>cell1_2</td>
+                  <td>cell2_2</td>
+                </tr>
+                <tr>
+                  <td>cell1_3</td>
+                  <td>cell2_3</td>
+                </tr>
+        </tbody>
+    </table>
+{% endblock %}
+

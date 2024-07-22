@@ -1,0 +1,16 @@
+{% extends "automotive_emission_header.html" %}
+
+{% block content %}
+
+    {% if test == "r10" %}
+        {% include "r10rev6.html" %}
+    {% elif test == "11452-2" %}
+        {% include "iso_11452-2.html" %}
+    {% elif test == "7637-2" %}
+        {% include "iso_7637-2.html" %}
+    {% else %}
+        {% include "automotive_emission.html" %}
+{% endif %}
+   
+{% endblock %}
+

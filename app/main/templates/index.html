@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="menu">
+            <thead>
+              <tr>
+                <th colspan="2" style="border: 4px dashed grey">Military</th>
+                <th colspan="2" style="border: 4px dashed grey"><a href="/automotive">Automotive</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Radiated Susceptebility</td>
+                <td>Conducted Susceptebility</td>
+                <td>Radiated Immunity</td>
+                
+                <td>Conducted Immunity</td>
+              </tr>
+              <tr>
+                <td colspan="2"><img src="{{ url_for('military.static', filename='images/mig21.jpg') }}"></td>
+                <td colspan="2"><img src="{{ url_for('automotive.static', filename='images/vw4.jpg') }}"></td>
+              </tr>
+              <tr>
+                <td>Radiated Emission</td>
+                <td>Conducted Emission</td>
+                <td>Radiated Emission</td>
+                <td>Conducted Emission</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>foot1</td>
+                <td>foot2</td>
+                <td><img src="{{ url_for('static', filename='images/hl.png') }}" width="60"></td>
+                <td>foot4</td>
+              </tr>
+            </tfoot>
+</table>
+{% endblock %}

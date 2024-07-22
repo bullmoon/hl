@@ -1,0 +1,73 @@
+{% block content %}
+
+<h1 class="menu">ISO 11452-4 "The Bulk Current Injection (BCI)"</h1>
+
+<table class="atmtv">
+    <tr>
+      <td>Software: EMC32</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Frequency range: 100 kHz - 400 MHz</td>
+      <td>...the dwell time shall be a minimum of 1 s (clause 5.5, 11452-1)</td>
+    </tr>
+    <tr>
+      <td>The following modulations should be used for all applicable parts of ISO 11452:<br>— CW: 15 Hz to 18 GHz;<br>— AM: 10 kHz to 800 MHz;<br>— PM type 1: 800 MHz to 1,2 GHz and 1,4 GHz to 2,7 GHz;<br>— PM type 2: 1,2 GHz to 1,4 GHz and 2,7 GHz to 18 GHz. </td>
+      <td>frequency steps sizes (Logarithmic steps):<br> 100 kHz - 10 MHz: 10%<br> 10 MHz - 400 MHz: 5%</td>
+    </tr>
+  </table>
+<p></p>
+<table class="atmtv">
+    <tr>
+      <td><img src="/automotive/static/images/11452-4/substitution_method.png" width="480"></td>
+      <td><img src="/automotive/static/images/11452-4/calibration_example.png" width="480"><br><img src="/automotive/static/images/11452-4/test_example.png" width="480"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/11452-4/substitution-method-test-setup.png" width="480"></td>
+      <td>— The calibration shall be performed with an unmodulated sinusoidal RF signal (CW).<br>
+        <ul><b>Plots:</b>
+        <li>Calibration
+          <ul>
+            <li>Forward</li>
+            <li>Sensor</li>
+          </ul>
+        </li>
+        <li>Test</li>
+        <ul>
+            <li>Forward</li>
+            <li>Immunity</li>
+          </ul>
+      </ul></td>
+    </tr>
+    <tr>
+        <td><img src="/automotive/static/images/11452-4/side_view.png" width="480"></td>
+        <td><img src="/automotive/static/images/11452-4/top_view.png" width="480"></td>
+      </tr>
+  </table>
+<p></p>
+  <table>
+    <tr>
+      <td>Equipment</td>
+      <td>EMC32 Hardware Setup (it is possible to use termination instead of CP 231)</td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/11452-4/testequipment.png" width="480"></td>
+      <td><img src="/automotive/static/images/11452-4/testsetup01.png" width="480"><br><img src="/automotive/static/images/11452-4/testsetup02.png" width="480"></td>
+    </tr>
+    <tr>
+  </table>
+  <p></p>
+  <table>
+      <td>EMC32 Calibration config (Dwell time = 0)</td>
+      <td>EMC32 Test config (CW and Modulation can't be in the same config)</td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/11452-4/dwell_step_calib.png" width="480"></td>
+      <td><img src="/automotive/static/images/11452-4/dwell_step_test.png" width="480"></td>
+    </tr>
+  </table>
+{% endblock %}

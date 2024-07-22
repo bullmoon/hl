@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    border: 5px solid rgb(209, 209, 255);
+    padding: 20px; /* Add padding around the content */
+    border-radius: 20px;
+  }
+
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  table, th, td {
+    border: 3px solid;
+    /* border-collapse: collapse;*/
+  }
+
+.menu {
+  /* border: 1px solid;
+  border-collapse: collapse;
+  border-color: green;*/
+  color: navy;
+  text-align: center;
+  vertical-align: top;
+}
+
+.atmtv {
+  border-color: green;
+  color: green;
+}
+
+.atmtv td {
+  width: 50%;
+  border: 1px solid;
+}
+
+.atmtv img {
+  display: block; /* Преобразует изображения в блочные элементы */
+  margin: 0 auto; /* Автоматически выравнивает по горизонтали */
+  position: relative; /* Позволяет позиционировать элементы относительно себя */
+  /* top: 50%; /* Позиционирует изображение по вертикали на 50% */
+  /* align-items: center;/* transform: translateY(-50%); /* Вертикальное центрирование без изменения высоты */
+  width: 480px; /* Устанавливает ширину изображения */
+}
+
+.l-atmtv {
+  text-align: left;
+}
+
+.r-atmtv {
+  text-align: right;
+}
+
+.scope {
+  text-align: left;
+  th {width: 20%;}
+  img {width: 90%; height: auto;}
+}

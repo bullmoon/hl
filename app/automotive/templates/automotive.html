@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if category == "emission" %}
+        {% include "automotive_emission.html" %}
+    {% elif category == "immunity" %}
+        {% include "automotive_immunity.html" %}
+    {% else %}
+        {% include "automotive_emission.html" %}
+        {% include "automotive_immunity.html" %}
+{% endif %}
+   
+{% endblock %}
+

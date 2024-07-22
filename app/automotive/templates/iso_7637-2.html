@@ -1,0 +1,153 @@
+{% block content %}
+
+<h1 class="menu">ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
+<p class="menu">ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
+<table class="atmtv">
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/table1.png"></td>
+      <td>Equipment: <mark>Power supply (13/27V)!</mark> (<del>battery</del>), burst generator HL 0860 (Burst-Generator SFT 400 125 kHz), Wavetek 178 50MHz Waveform Generator, Managed Power Supply "Chroma" or "Elgar", Switch HL 2226</td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/severity_level_12v.png"></td>
+      <td><img src="/automotive/static/images/7637-2/severity_level_24v.png"></td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/verification.png"></td>
+      <td><img src="/automotive/static/images/7637-2/test.png"></td>
+    </tr>
+    <tr>
+      <td><a href="#pulse1">Pulse 1</a></td>
+      <td>Simulation of transients due to supply disconnection from inductive loads</td>
+    </tr>
+    <tr>
+      <td><a href="#pulse2a">Pulse 2a</a></td>
+      <td>Simulates transients due to sudden interruption of currents in a device connected in parallel with the EUT due to the inductance of the wiring harness</td>
+    </tr>
+    <tr>
+      <td><a href="#pulse2b">Pulse 2b</a> (The same setup as in test "Pulse 4")</td>
+      <td>Simulates transients from DC motors acting as generators after the ignition is switched off.</td>
+    </tr>
+    <tr>
+      <td><a href="#pulse3ab">Pulse 3a/3b</a></td>
+      <td>Simulation of transients, which occur as a result of the switching processes</td>
+    </tr>
+    <tr>
+      <td><a href="#pulse4">Pulse 4</a> (The same setup as in test "Pulse 2b")</td>
+      <td><mark>The test pulses 4, 5a, and 5b have been removed from this edition of this part of ISO 7637, since they are specified in ISO 16750-2 and ISO 21848.</mark></td>
+    </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse1">Pulse 1</h4>
+<table class="atmtv">
+    <thead>
+    <tr>
+      <td><ul>
+        <li>2 Power supplies - for 13/27 V & 150/600 V</li>
+        <li>Wavetek 178 50MHz Waveform Generator</li>
+        <li>2 specific automotive boxes for Pulse 1</li>
+        <li>1 specific box as a load</li>
+        <li>Perform verification at 0V DC (U<sub>a</sub>=0 V) - Increase the voltage on the power supply until the pulse reaches 150/600 V, implement the measurement of t<sub>r</sub> & t<sub>d</sub></li>
+        <li>Apply LV PS, and execute the calibration (U<sub>a</sub>=13/27 V) - measurement t<sub>3</sub>, t<sub>2</sub> & t<sub>1</sub></li>
+        <li>Connect the DUT and save the result plot. Wait for the test to complete.</li>
+      </ul>
+      <img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
+      <td><img src="/automotive/static/images/7637-2/wavetek-178.jpg"><br>
+      <dl>
+        <dt>Wavetek generator configuration:</dt>
+        <dd>Apples</dd>
+        <dd>Bananas</dd>
+        <dd>Oranges</dd>
+      </dl></td>
+    </tr>
+    </thead>
+    <tr>
+        <td><img src="/automotive/static/images/7637-2/table2.png"></td>
+        <td><img src="/automotive/static/images/7637-2/figure5.png"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><ul>Please, save the following plots:
+        <li>Verification - <mark>U<sub>s</sub>, t<sub>r</sub>, t<sub>d</sub>, t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub></mark></li>
+        <li>Verification under load (load instead of EUT) - <mark>U<sub>s</sub>, t<sub>d</sub></mark></li>
+        <li>Calibration (without, but with U<sub>a</sub> 13/27 V) - <mark>U<sub>s</sub></mark></li>
+        <li>EUT response - <mark>plot with multiple pulses, and plot with a single pulse</mark></li>
+      </ul>
+        </td>
+    </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse2a">Pulse 2a</h4>
+<table class="atmtv">
+    <thead>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
+      <td>Pay attention to the special boxs are appropriate for 12 and 24 V</td>
+    </tr>
+    </thead>
+    <tr>
+        <td><img src="/automotive/static/images/7637-2/table3.png"></td>
+        <td><img src="/automotive/static/images/7637-2/figure6.png"></td>
+      </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse2b">Pulse 2b</h4>
+<table class="atmtv">
+  <tr>
+    <td><p>to edit</p>
+      <ul>Use the specific software to program pulse steps.
+      <li>Open the XXX software</li>
+      <li>Wait for connection to complete</li>
+      <li>Switch to DC mode</li>
+      <li>Use phase 2 (from 06.2024 phase 1 isn't available)</li>
+      <li>Select "list", and program any pulse steps</li>
+      <li>Switch on the power</li>
+      <li>Set number of pulses to 10 and turn on the programmed steps</li>
+    </ul></td>
+    <td><img src="/automotive/static/images/7637-2/chroma.png"></td>
+  </tr>
+  <tr>
+    <td><img src="/automotive/static/images/7637-2/table4.png"></td>
+    <td><img src="/automotive/static/images/7637-2/figure7.png"></td>
+  </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse3ab">Pulse 3a/3b (pay attention, the difference is in the polarization only)</h4>
+<table class="atmtv">
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/figure8.png"></td>
+      <td><img src="/automotive/static/images/7637-2/table5.png"><br>
+          <img src="/automotive/static/images/7637-2/tablec5.png"></td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/figure9.png"></td>
+      <td><img src="/automotive/static/images/7637-2/table6.png"><br>
+          <img src="/automotive/static/images/7637-2/tablec6.png"></td>
+    </tr>
+    <tr>
+        <td>Increase the voltage on the generator to ~1.6 kV to get a pulse of ~200 V.<br>
+          Duration of 1 hour for each polarization<br>
+          <img src="/automotive/static/images/7637-2/gnrtr.png"></td>
+        <td><img src="/automotive/static/images/7637-2/burstdef.png"></td>
+    </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse4">Pulse 4 (one pulse only)</h4>
+<table class="atmtv">
+  <tr>
+    <td><p>to edit</p>
+      <ul>Use the specific software to program pulse steps.
+      <li>Open the XXX software</li>
+      <li>Wait for connection to complete</li>
+      <li>Switch to DC mode</li>
+      <li>Use phase 2 (from 06.2024 phase 1 isn't available)</li>
+      <li>Select "list", and program any pulse steps</li>
+      <li>Switch on the power</li>
+      <li>Set number of pulses to 10 and turn on the programmed steps</li>
+    </ul></td>
+    <td><img src="/automotive/static/images/7637-2/chroma.png"></td>
+  </tr>
+  <tr>
+    <td><p>Parameters</p></td>
+    <td><img src="/automotive/static/images/7637-2/pulse4.png"></td>
+  </tr>
+</table>
+{% endblock %}
