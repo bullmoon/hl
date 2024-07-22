@@ -23,7 +23,7 @@ def automotive_immunity(test):
 
 @automotive.route('/emission/<test>')
 def automotive_emission(test):
-    valid_tests = ["r10"]
+    valid_tests = ["r10", "tl81000", "cispr25"]
     if test in valid_tests:
         return render_template('automotive_emission_test.html', test=test)
     else:
