@@ -1,7 +1,7 @@
 from flask import Blueprint
 
-equipment = Blueprint(
-    'equipment', 
+software = Blueprint(
+    'software', 
     __name__,
     static_folder='static',  # Путь к статическим файлам
     template_folder='templates'  # Путь к шаблонам

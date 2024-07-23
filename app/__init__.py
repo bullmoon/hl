@@ -9,13 +9,16 @@ def create_app():
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     
-    from .equipment import equipment as equipment_blueprint
-    app.register_blueprint(equipment_blueprint)
-
     from .automotive import automotive as automotive_blueprint
     app.register_blueprint(automotive_blueprint, url_prefix='/automotive')
 
     from .military import military as military_blueprint
     app.register_blueprint(military_blueprint, url_prefix='/military')
+
+    from .equipment import equipment as equipment_blueprint
+    app.register_blueprint(equipment_blueprint)
+
+    from .software import software as software_blueprint
+    app.register_blueprint(software_blueprint)
     
     return app
