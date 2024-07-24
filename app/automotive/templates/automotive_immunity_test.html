@@ -4,13 +4,20 @@
 
     {% if test == "11452-4" %}
         {% include "iso_11452-4.html" %}
-    {% elif test == "11452-2" %}
-        {% include "iso_11452-2.html" %}
-    {% elif test == "7637-2" %}
-        {% include "iso_7637-2.html" %}
-    {% else %}
-        {% include "automotive_immunity.html" %}
-{% endif %}
+
+        {% elif test == "11452-2" %}
+            {% include "iso_11452-2.html" %}
+
+        {% elif test == "7637-2" %}
+            {% include "iso_7637-2.html" %}
+
+        {% elif test == "tl81000-523" %}
+            {% include "tl_81000-523.html" %}
+
+        {% else %}
+            {% include "automotive_immunity.html" %}
+
+    {% endif %}
    
 {% endblock %}
 
