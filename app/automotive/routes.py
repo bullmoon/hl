@@ -15,7 +15,7 @@ def automotive_default():
 
 @automotive.route('/immunity/<test>')
 def automotive_immunity(test):
-    valid_tests = ["11452-4", "11452-2", "7637-2"]
+    valid_tests = ["11452-4", "11452-2", "7637-2", "tl81000-523"]
     if test in valid_tests:
         return render_template('automotive_immunity_test.html', test=test)
     else:
@@ -23,7 +23,7 @@ def automotive_immunity(test):
 
 @automotive.route('/emission/<test>')
 def automotive_emission(test):
-    valid_tests = ["r10", "tl81000", "cispr25"]
+    valid_tests = ["r10", "tl81000-536", "cispr25"]
     if test in valid_tests:
         return render_template('automotive_emission_test.html', test=test)
     else:
