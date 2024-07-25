@@ -1,30 +1,34 @@
 {% block content %}
 <h1 class="menu">Automotive Immunity section</h1>
-    
-    <table class="demo">
-        <caption style="caption-side:top">
-            <img src="{{ url_for('automotive.static', filename='images/vw4.jpg') }}" alt="Automotive Image">
-            Immunity Test List
-        </caption>
-        <tbody>
-            <thead>
-                <tr>
-                  <th>Test</th>
-                  <th>Description</th>
-                </tr>
-                <tr>
-                  <td><a href="/automotive/immunity/11452-4">ISO 11452-4</a></td>
-                  <td>Part 4: Harness excitation methods<br>
-                    The Bulk Current Injection (BCI)</td>
-                </tr>
-                <tr>
-                  <td><a href="/automotive/immunity/7637-2">ISO 7637-2</a></td>
-                  <td>Part 2: Electrical transient conduction along supply lines only (Pulse 1, 2a/2b, 3a/3b, 4)</td>
-                </tr>
-                <tr>
-                  <td><a href="/automotive/immunity/tl81000-523">TL 81000 5.2.3 (VW 2021)</a></td>
-                  <td>Interference immunity (Antenna)</td>
-                </tr>
-        </tbody>
-    </table>
+
+<table class="demo">
+  <caption style="caption-side:top">
+    <img src="{{ url_for('automotive.static', filename='images/vw4.jpg') }}" alt="Automotive Image">
+    Immunity Test List
+  </caption>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/automotive/immunity/11452-2">ISO 11452-2</a></td>
+      <td>Part 2: Absorber-lined shielded enclosure</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/immunity/11452-4">ISO 11452-4</a></td>
+      <td>Part 4: The Bulk Current Injection (BCI)</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/immunity/7637-2">ISO 7637-2</a></td>
+      <td>Part 2: Electrical transient conduction along supply lines only (Pulse 1, 2a/2b, 3a/3b, 4)</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/immunity/tl81000-523">TL 81000 5.2.3 (VW 2021)</a></td>
+      <td>Interference immunity (Antenna)</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock %}

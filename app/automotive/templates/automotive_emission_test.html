@@ -2,15 +2,13 @@
 
 {% block content %}
 
-    {% if test == "r10" %}
-        {% include "r10rev6.html" %}
-    {% elif test == "cispr25" %}
-        {% include "cispr25.html" %}
-    {% elif test == "tl81000" %}
-        {% include "tl_81000.html" %}
-    {% else %}
-        {% include "automotive_emission.html" %}
-{% endif %}
-   
+    {% set test_templates = {
+        "r10": "r10rev6.html",
+        "cispr25": "cispr25.html",
+        "tl81000-536": "tl_81000-536.html"
+    } %}
+
+    {% include test_templates.get(test, "automotive_emission.html") %}
+
 {% endblock %}
 

@@ -2,22 +2,13 @@
 
 {% block content %}
 
-    {% if test == "11452-4" %}
-        {% include "iso_11452-4.html" %}
+    {% set test_templates = {
+        "11452-4": "iso_11452-4.html",
+        "11452-2": "iso_11452-2.html",
+        "7637-2": "iso_7637-2.html",
+        "tl81000-523": "tl_81000-523.html"
+    } %}
 
-        {% elif test == "11452-2" %}
-            {% include "iso_11452-2.html" %}
+    {% include test_templates.get(test, "automotive_immunity.html") %}
 
-        {% elif test == "7637-2" %}
-            {% include "iso_7637-2.html" %}
-
-        {% elif test == "tl81000-523" %}
-            {% include "tl_81000-523.html" %}
-
-        {% else %}
-            {% include "automotive_immunity.html" %}
-
-    {% endif %}
-   
 {% endblock %}
-
