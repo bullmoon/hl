@@ -1,25 +1,70 @@
 {% block content %}
 
-<h1 class="menu">ISO 11452-9. Part 9: "Portable transmitters"</h1>
+<h4 class="menu" >INTERNATIONAL STANDARD ISO 11452-9<br>Road vehicles — Component test methods for electrical disturbances from narrowband radiated electromagnetic energy<br>Part 9: Portable transmitters</h4>
 
-<div class="atmtv">
-<table>
-    <caption>My Table</caption>  <thead>
-      <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-      </tr>
-    </thead>
+<table class="atmtv">
+    <caption align="top"></caption>
     <tbody>
-      <tr>
-        <td>Data 1-1</td>
-        <td>Data 1-2</td>
-      </tr>
-      <tr>
-        <td>Data 2-1</td>
-        <td>Data 2-2</td>
-      </tr>
+        <tr>
+            <td>Test conditions:</td>
+            <td>The applicable frequency range of the test method is <mark>142 MHz to 6 GHz.</mark></td>
+        </tr>
+        <tr>
+            <td>Standard test conditions are given in ISO 11452‐1 for the following:</td>
+            <td><ul>
+                <li>test temperature;</li>
+                <li>supply voltage;</li>
+                <li><a href="#dwell">dwell time;</a></li>
+                <li>test signal quality;</li>
+                <li>frequency steps;</li>
+                <li><a href="#modulation">modulation.</a></li>
+            </td>
+        </tr>
+        <tr>
+            <td>Test location:</td>
+            <td>The test shall be performed in an absorber lined shielded enclosure (ALSE).</td>
+        </tr>
+        <tr>
+            <td><ul>Antennas:
+                <li>(<mark>80 MHz</mark> - 3 GHz) HL XXX</li>
+                <li>(3 - 6 GHz) HL XXX</li>
+            </ul><img src="/automotive/static/images/11452-9/antennas.png"><br>
+                </td>
+            <td>
+                <img src="/automotive/static/images/11452-9/antenna_positions.png"><br>
+                <img src="/automotive/static/images/11452-9/photo_antenna_positions.png"></td>
+        </tr>
+        <tr>
+            <td><img src="/automotive/static/images/11452-9/setup.png"></td>
+            <td><img src="/automotive/static/images/11452-9/eut_positions.png"></td>
+        </tr>
+        <tr>
+            <td><img src="/automotive/static/images/11452-9/harness_positions.png"></td>
+            <td><img src="/automotive/static/images/11452-9/harness_positions_small.png"></td>
+        </tr>
+        <tr>
+            <td id="modulation">Modulation.<br>
+                <img src="/automotive/static/images/11452-9/pulse_width.png">
+                <p id="dwell">Dwell time at each test frequency shall be 2 s or longer.</p></td>
+            <td><img src="/automotive/static/images/11452-9/table_b1.png"></td>
+        </tr>
+        <tr>
+            <td>Using software:</td>
+            <td>R&S EMC32</td>
+        </tr>
+        <tr>
+            <td>Hardware setup:</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+        </tr>
     </tbody>
-  </table>
-</div>
+</table>
+
 {% endblock %}
