@@ -15,7 +15,7 @@ def automotive_default():
 
 @automotive.route('/emission/<test>')
 def automotive_emission(test):
-    valid_tests = ["r10", "tl81000-536", "cispr25"]
+    valid_tests = ["r10", "tl81000-535", "tl81000-536", "cispr25-63", "cispr25-64", "cispr25-65"]
     if test in valid_tests:
         return render_template('automotive_emission_test.html', test=test)
     else:
