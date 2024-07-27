@@ -1,46 +1,100 @@
 {% block content %}
 <div class="atmtv">
-<h1 class="menu">6. Measurement of components and modules<br>
+  <h1 class="menu">6. Measurement of components and modules<br>
     6.5 Radiated emissions from components/modules – ALSE method</h1>
-    
 
-    <table>
-        <caption align="top">...</caption>
-        <thead></thead>
-        <tbody>
-          <tr>
-            <td>Antennas & ranges:</td>
-            <td><img src="/automotive/static/images/cispr25-65/antennas.png"></td>
-          </tr>
-          <tr>
-            <td>Setups:</td>
-            <td>
-                <li><a href="#rod">rod antenna test setup (<mark>150 kHz - 30 MHz</mark>)</a></li>
-                <li>biconical antenna test setup (<mark>30 - 200 MHz</mark>)</li>
-                <li>log periodic antenna test setup (<mark>200 - 1000 MHz</mark>)</li>
-                <li>horn antenna test setup (<mark>1000 - 6000 MHz</mark>)</li>
-            </td>
-          </tr>
-          <tr>
-            <td>Sarah</td>
-            <td>29</td>
-          </tr>
-          <tr>
-            <td>
-                <ul id="rod">Rod antenna
-                    <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
-                    <li>Gain must be switched OFF</li>
-                </ul>
-            </td>
-            <td><img src="/automotive/static/images/cispr25-65/rod_antenna_setup.png"></td>
-          </tr>
-          <tr>
-            <td><img src="/automotive/static/images/cispr25-65/rod_photo_01.png"></td>
-            <td><img src="/automotive/static/images/cispr25-65/rod_photo_02.png"></td>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
-      </table>
+
+  <table>
+    <caption align="top">...</caption>
+    <thead></thead>
+    <tbody>
+      <tr>
+        <td>Software:</td>
+        <td>R&S Elektra (on the cart #8)</td>
+      </tr>
+      <tr>
+        <td>Antennas & ranges:</td>
+        <td><img src="/automotive/static/images/cispr25-65/antennas.png"></td>
+      </tr>
+      <tr>
+        <td>Setups:</td>
+        <td>
+          <li><a href="#rod">rod antenna test setup</a> (<mark>150 kHz - 30 MHz</mark>)</li>
+          <li><a href="#biconical">biconical antenna test setup</a> (<mark>30 - 200 MHz</mark>)</li>
+          <li><a href="#log">log periodic antenna test setup</a> (<mark>200 - 1000 MHz</mark>)</li>
+          <li><a href="#horn">horn antenna test setup</a> (<mark>above 1000 MHz</mark>)</li>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>Pay attention to:
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>LNA 1187 has two inputs for different ranges</li>
+          </ul>
+        </td>
+        <td><img src="/equipment/static/images/hl_1187.png"></td>
+      </tr>
+      <tr>
+        <td>
+          <ul id="rod">Rod antenna
+            <li>Rod Antenna must be connected with reference plane (Grounding connection (full width bond between
+              counterpoise and reference ground plane) page 61, figure 15)</li>
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>Gain must be switched OFF</li>
+          </ul>
+        </td>
+        <td><img src="/automotive/static/images/cispr25-65/rod_antenna_setup.png"></td>
+      </tr>
+      <tr>
+        <td><img src="/automotive/static/images/cispr25-65/rod_photo_01.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/rod_photo_02.png"></td>
+      </tr>
+      <tr>
+        <td>
+          <ul id="biconical">Biconical antenna
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>...</li>
+          </ul>
+        </td>
+        <td><img src="/automotive/static/images/cispr25-65/biconical_antenna_setup.png"></td>
+      </tr>
+      <tr>
+        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_01.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_02.png"></td>
+      </tr>
+      <tr>
+        <td>
+          <ul id="log">Log periodic antenna
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>...</li>
+          </ul>
+        </td>
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_antenna_setup.png"></td>
+      </tr>
+      <tr>
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_01.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_02.png"></td>
+      </tr>
+      <tr>
+        <td>
+          <ul id="horn">Horn antenna
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </td>
+        <td><img src="/automotive/static/images/cispr25-65/horn_antenna_setup.png"></td>
+      </tr>
+      <tr>
+        <td><img src="/automotive/static/images/cispr25-65/horn_photo_01.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/horn_photo_02.png"></td>
+      </tr>
+      <tr>
+        <td><img src="/automotive/static/images/cispr25-65/limits_alse.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/limits_alse_mobile.png"></td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
 </div>
 
 
