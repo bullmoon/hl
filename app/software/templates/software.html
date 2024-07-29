@@ -2,12 +2,21 @@
 
 {% block content %}
 
-<table class="atmtv">
+<div class="atmtv">
+<table>
+    <thead>Files for download</thead>
     <tr>
-        <td>R&S ELEKTRA</td>
-        <td>EMC32</td>
-        <td><a href="/software/elektra_tables.html">Downloads</a></td>
+        <th>R&S ELEKTRA</th>
+        <th>EMC32</th>
+    </tr>
+    <tr>
+        <td><ul>Limit Lines
+            <li><a href="/software/static/files/test.csv">Test</a></li>
+        </ul></td>
+        <td><ul>Limit Lines
+            <li><a href="/software/static/files/test.csv">Test</a></li>
+        </ul></td>
     </tr>
  </table>
- 
+</div>
 {% endblock %}

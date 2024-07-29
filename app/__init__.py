@@ -19,6 +19,6 @@ def create_app():
     app.register_blueprint(equipment_blueprint, url_prefix='/equipment')
 
     from .software import software as software_blueprint
-    app.register_blueprint(software_blueprint)
+    app.register_blueprint(software_blueprint, url_prefix='/software')
     
     return app
