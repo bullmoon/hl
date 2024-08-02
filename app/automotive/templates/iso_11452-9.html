@@ -1,10 +1,14 @@
 {% block content %}
 
 <h4 class="menu" >INTERNATIONAL STANDARD ISO 11452-9<br>Road vehicles — Component test methods for electrical disturbances from narrowband radiated electromagnetic energy<br>Part 9: Portable transmitters</h4>
-
-<table class="atmtv">
+<div class="atmtv">
+<table>
     <caption align="top"></caption>
     <tbody>
+        <tr>
+            <td>Using software:</td>
+            <td>R&S EMC32</td>
+        </tr>
         <tr>
             <td>Test conditions:</td>
             <td>The applicable frequency range of the test method is <mark>142 MHz to 6 GHz.</mark></td>
@@ -26,8 +30,8 @@
         </tr>
         <tr>
             <td><ul>Antennas:
-                <li>(<mark>80 MHz</mark> - 3 GHz) HL XXX</li>
-                <li>(3 - 6 GHz) HL XXX</li>
+                <li>(<mark>80 MHz</mark> - 3 GHz) HL 5439</li>
+                <li>(3 - 6 GHz) HL 7710</li>
             </ul><img src="/automotive/static/images/11452-9/antennas.png"><br>
                 </td>
             <td>
@@ -37,6 +41,7 @@
         <tr>
             <td><img src="/automotive/static/images/11452-9/setup.png">
                 <p></p><p>Set "Boonton 4220A" units of measurement to dB, not in W. Generator and Power Meter should use the same units of measurement.</p>
+                <img src="/equipment/static/images/hl_2875.png">
             </td>
             <td><img src="/automotive/static/images/11452-9/eut_positions.png"></td>
         </tr>
@@ -49,10 +54,6 @@
                 <img src="/automotive/static/images/11452-9/pulse_width.png">
                 <p id="dwell">Dwell time at each test frequency shall be 2 s or longer.</p></td>
             <td><img src="/automotive/static/images/11452-9/table_b1.png"></td>
-        </tr>
-        <tr>
-            <td>Using software:</td>
-            <td>R&S EMC32</td>
         </tr>
         <tr>
             <td>Hardware setup:</td>
@@ -68,5 +69,5 @@
         </tr>
     </tbody>
 </table>
-
+</div>
 {% endblock %}

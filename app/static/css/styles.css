@@ -1,32 +1,46 @@
 body {
     background-color: white;
     border: 5px solid rgb(209, 209, 255);
+    min-height: 1280px;
     padding: 20px; /* Add padding around the content */
     border-radius: 20px;
   }
 
-  h1 {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Убедитесь, что navbar выше других элементов */
+    background-color: white; /* Пример цвета фона для navbar */
+    border-bottom: 3px solid #00364A; /* Пример границы для разделения */
+}
+
+  h1, h2, h3, h4, h5, h6 {
     color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.3);
   }
+
   p {
     color: red;
   }
 
+  mark {
+    background-color: #1b98e0; /* Цвет фона для выделенного текста */
+    color: white; /* Цвет текста для выделенного текста */
+}
+
   table {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 80%;
-  }
+    border: 3px solid;
+    border-collapse: collapse;
+}
 
   table, th, td {
     border: 3px solid;
-    /* border-collapse: collapse;*/
   }
 
 .menu {
-  /* border: 1px solid;
-  border-collapse: collapse;
-  border-color: green;*/
   color: navy;
   text-align: center;
   vertical-align: top;
@@ -34,21 +48,26 @@ body {
 
 .atmtv {
   border-color: green;
-  color: green;
+  color: #00506E;
 }
 
 .atmtv td {
   width: 50%;
   border: 1px solid;
+  padding: 10px; /* Добавляем отступы */
 }
 
 .atmtv img {
   display: block; /* Преобразует изображения в блочные элементы */
   margin: 0 auto; /* Автоматически выравнивает по горизонтали */
-  position: relative; /* Позволяет позиционировать элементы относительно себя */
-  /* top: 50%; /* Позиционирует изображение по вертикали на 50% */
-  /* align-items: center;/* transform: translateY(-50%); /* Вертикальное центрирование без изменения высоты */
   width: 480px; /* Устанавливает ширину изображения */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5); /* Добавляет тень */
+  border-radius: 7px; /* Добавляет скругленные углы */
+  transition: box-shadow 0s ease-in-out; /* Добавляет плавный переход для тени */
+}
+
+.atmtv img:hover {
+  box-shadow: 0 10px 24px rgba(0, 80, 110, 1); /* Увеличивает тень при наведении */
 }
 
 .l-atmtv {
@@ -61,6 +80,13 @@ body {
 
 .scope {
   text-align: left;
-  th {width: 20%;}
-  img {width: 90%; height: auto;}
+}
+
+.scope th {
+  width: 20%;
+}
+
+.scope img {
+  width: 90%;
+  height: auto;
 }
