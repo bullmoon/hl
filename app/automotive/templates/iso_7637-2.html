@@ -2,7 +2,9 @@
 
 <h1 class="menu">ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
 <p class="menu">ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
-<table class="atmtv">
+
+<div  class="atmtv">
+<table>
     <tr>
       <td><img src="/automotive/static/images/7637-2/table1.png"></td>
       <td>Equipment: <mark>Power supply (13/27V)!</mark> (<del>battery</del>), burst generator HL 0860 (Burst-Generator SFT 400 125 kHz), Wavetek 178 50MHz Waveform Generator, Managed Power Supply "Chroma" or "Elgar", Switch HL 2226</td>
@@ -38,7 +40,7 @@
 </table>
 <p></p>
 <h4 class="menu" id="pulse1">Pulse 1</h4>
-<table class="atmtv">
+<table>
     <thead>
     <tr>
       <td><ul>
@@ -76,7 +78,7 @@
 </table>
 <p></p>
 <h4 class="menu" id="pulse2a">Pulse 2a</h4>
-<table class="atmtv">
+<table>
     <thead>
     <tr>
       <td><img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
@@ -90,7 +92,7 @@
 </table>
 <p></p>
 <h4 class="menu" id="pulse2b">Pulse 2b</h4>
-<table class="atmtv">
+<table>
   <tr>
     <td><p>to edit</p>
       <ul>Use the specific software to program pulse steps.
@@ -111,7 +113,7 @@
 </table>
 <p></p>
 <h4 class="menu" id="pulse3ab">Pulse 3a/3b (pay attention, the difference is in the polarization only)</h4>
-<table class="atmtv">
+<table>
     <tr>
       <td><img src="/automotive/static/images/7637-2/figure8.png"></td>
       <td><img src="/automotive/static/images/7637-2/table5.png"><br>
@@ -125,29 +127,35 @@
     <tr>
         <td>Increase the voltage on the generator to ~1.6 kV to get a pulse of ~200 V.<br>
           Duration of 1 hour for each polarization<br>
-          <img src="/automotive/static/images/7637-2/gnrtr.png"></td>
+          <img src="/automotive/static/images/7637-2/gnrtr.png"><br>
+          Verification (w/out Ua, only pulse. Open circut, and with 50 Ohm load - see the table 5, table 6)
+          <img src="/automotive/static/images/7637-2/pulse3ab_verification_50_ohm.png"></td>
         <td><img src="/automotive/static/images/7637-2/burstdef.png"></td>
     </tr>
 </table>
 <p></p>
 <h4 class="menu" id="pulse4">Pulse 4 (one pulse only)</h4>
-<table class="atmtv">
+<table>
   <tr>
     <td><p>to edit</p>
       <ul>Use the specific software to program pulse steps.
-      <li>Open the XXX software</li>
-      <li>Wait for connection to complete</li>
-      <li>Switch to DC mode</li>
-      <li>Use phase 2 (from 06.2024 phase 1 isn't available)</li>
-      <li>Select "list", and program any pulse steps</li>
-      <li>Switch on the power</li>
-      <li>Set number of pulses to 10 and turn on the programmed steps</li>
+        <li>Swich on all the equipment in the cart</li>
+        <li>Open the "SWPS" software</li>
+        <li>Wait for GPIB connection to complete (If the software doesn't respond, physically delete all user sequences on the "ELGAR" device.)</li>
+        <li>Switch to the tab "...", and load software settings (e.g. "automotive_12_v.prg)</li>
+        <li>Switch to the tab "sequence", and load sequence config from HDD (algorithm: hdd->software->device RAM)</li>
+        <li>Set the program behave - loop, repeat, etc</li>
+        <li>(parallel mode must be disabled!) Make any changes and upload the config <b>to SmartWave</b> (ELGAR equipmant works with internal memory store only)</li>
+        <li>Switch on the "Output" button (tab "..." settings will be applied)</li>
+        <li>Switch on the "Sequence" (a window for selecting the uploaded configuration will be open)</li>
+        <li>Observe the process (The software doesn't contain any monitor system)</li>
     </ul></td>
-    <td><img src="/automotive/static/images/7637-2/chroma.png"></td>
+    <td><img src="/automotive/static/images/7637-2/elgar-powersupplies.jpg"></td>
   </tr>
   <tr>
     <td><p>Parameters</p></td>
     <td><img src="/automotive/static/images/7637-2/pulse4.png"></td>
   </tr>
 </table>
+</div>
 {% endblock %}
