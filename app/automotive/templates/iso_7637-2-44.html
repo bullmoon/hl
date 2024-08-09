@@ -2,7 +2,13 @@
 
 <h1 class="menu">ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
 <p class="menu">ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
-
+<p></p>
+<table>
+  <tr class="menu">
+    <th><img src="/automotive/static/images/7637-2/pulses.png" width="1024"></th>
+  </tr>
+</table>
+<p></p>
 <div  class="atmtv">
 <table>
     <tr>
@@ -30,7 +36,7 @@
       <td>Simulates transients from DC motors acting as generators after the ignition is switched off.</td>
     </tr>
     <tr>
-      <td><a href="#pulse3ab">Pulse 3a/3b</a></td>
+      <td>Pulse <a href="#pulse3a">3a</a> and <a href="#pulse3b">3b</a></td>
       <td>Simulation of transients, which occur as a result of the switching processes</td>
     </tr>
     <tr>
@@ -39,9 +45,12 @@
     </tr>
 </table>
 <p></p>
-<h4 class="menu" id="pulse1">Pulse 1</h4>
+<h4 class="menu" id="pulse1">Pulse 1 - Negative Pulse from Parallel Inductive Load</h4>
 <table>
-    <thead>
+    <thead></thead>
+      <th>A simulation of transients due to supply disconnection from inductive loads connected in parallel with the DUT, as used in the vicle.<br>
+      500 pulses (if ISO 7637-2:2004 - 5000 pulses)</th>
+      <th><img src="/automotive/static/images/7637-2/pulse_1_explain.png"></th>
     <tr>
       <td><ul>
         <li>2 Power supplies - for 13/27 V & 150/600 V</li>
@@ -56,43 +65,43 @@
       <td><img src="/automotive/static/images/7637-2/wavetek-178.jpg"><br>
       <dl>
         <dt>Wavetek generator configuration:</dt>
-        <dd>Apples</dd>
-        <dd>Bananas</dd>
-        <dd>Oranges</dd>
+        <dd>...</dd>
+        <dd>...</dd>
+        <dd>...</dd>
       </dl></td>
     </tr>
-    </thead>
     <tr>
         <td><img src="/automotive/static/images/7637-2/table2.png"></td>
         <td><img src="/automotive/static/images/7637-2/figure5.png"></td>
     </tr>
-    <tr>
-      <td colspan="2"><ul>Please, save the following plots:
-        <li>Verification - <mark>U<sub>s</sub>, t<sub>r</sub>, t<sub>d</sub>, t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub></mark></li>
-        <li>Verification under load (load instead of EUT) - <mark>U<sub>s</sub>, t<sub>d</sub></mark></li>
-        <li>Calibration (without, but with U<sub>a</sub> 13/27 V) - <mark>U<sub>s</sub></mark></li>
-        <li>EUT response - <mark>plot with multiple pulses, and plot with a single pulse</mark></li>
-      </ul>
-        </td>
-    </tr>
+    <th colspan="2"><ul>Please, save the following plots:
+      <li>Verification - <mark>U<sub>s</sub>, t<sub>r</sub>, t<sub>d</sub>, t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub></mark></li>
+      <li>Verification under load (load instead of EUT) - <mark>U<sub>s</sub>, t<sub>d</sub></mark></li>
+      <li>Calibration (without, but with U<sub>a</sub> 13/27 V) - <mark>U<sub>s</sub></mark></li>
+      <li>EUT response - <mark>plot with multiple pulses, and plot with a single pulse</mark></li>
+    </ul></th>
 </table>
 <p></p>
-<h4 class="menu" id="pulse2a">Pulse 2a</h4>
+<h4 class="menu" id="pulse2a">Pulse 2a - Positive Pulse from harness Inductance</h4>
 <table>
-    <thead>
+    <thead></thead>
+    <th>Simulates transients due to wiring harness inductance when current is interrupted in a device connected in parallel with the DUT.</th>
+    <th><img src="/automotive/static/images/7637-2/pulse_2a_explain.png"></th>
     <tr>
       <td><img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
       <td>Pay attention to the special boxs are appropriate for 12 and 24 V</td>
     </tr>
-    </thead>
     <tr>
         <td><img src="/automotive/static/images/7637-2/table3.png"></td>
         <td><img src="/automotive/static/images/7637-2/figure6.png"></td>
       </tr>
 </table>
 <p></p>
-<h4 class="menu" id="pulse2b">Pulse 2b</h4>
+<h4 class="menu" id="pulse2b">Pulse 2b - Positive Motor Run Down Pulse</h4>
 <table>
+  <thead></thead>
+  <th>Simulates transients from DC motors acting as generators after the ignition is switched off.</th>
+  <th><img src="/automotive/static/images/7637-2/pulse_2b_explain.png"></th>
   <tr>
     <td><p>to edit</p>
       <ul>Use the specific software to program pulse steps.
@@ -112,17 +121,15 @@
   </tr>
 </table>
 <p></p>
-<h4 class="menu" id="pulse3ab">Pulse 3a/3b (pay attention, the difference is in the polarization only)</h4>
+<h4 class="menu" id="pulse3a">Pulse 3a - Negative Switching Transients</h4>
 <table>
+  <thead></thead>
+  <th>Simulates negative arcing transients that occur as switches/relays turn on/off</th>
+  <th><img src="/automotive/static/images/7637-2/pulse_3a_explain.png"></th>
     <tr>
       <td><img src="/automotive/static/images/7637-2/figure8.png"></td>
       <td><img src="/automotive/static/images/7637-2/table5.png"><br>
           <img src="/automotive/static/images/7637-2/tablec5.png"></td>
-    </tr>
-    <tr>
-      <td><img src="/automotive/static/images/7637-2/figure9.png"></td>
-      <td><img src="/automotive/static/images/7637-2/table6.png"><br>
-          <img src="/automotive/static/images/7637-2/tablec6.png"></td>
     </tr>
     <tr>
         <td>Increase the voltage on the generator to ~1.6 kV to get a pulse of ~200 V.<br>
@@ -134,8 +141,23 @@
     </tr>
 </table>
 <p></p>
-<h4 class="menu" id="pulse4">Pulse 4 (one pulse only)</h4>
+<h4 class="menu" id="pulse3b">Pulse 3b - Positive Switching Transients</h4>
 <table>
+  <thead></thead>
+  <th>Simulates positive arcing transients that occur as switches/relays turn on/off</th>
+  <th><img src="/automotive/static/images/7637-2/pulse_3b_explain.png"></th>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/figure9.png"></td>
+      <td><img src="/automotive/static/images/7637-2/table6.png"><br>
+          <img src="/automotive/static/images/7637-2/tablec6.png"></td>
+    </tr>
+</table>
+<p></p>
+<h4 class="menu" id="pulse4">Pulse 4 Cold Crank Voltage Drop</h4>
+<table>
+  <thead></thead>
+  <th>The voltage reduction caused by energizing the starter motor circuits of the internal combustion engines</th>
+  <th><img src="/automotive/static/images/7637-2/pulse_4_explain.png"></th>
   <tr>
     <td><p>to edit</p>
       <ul>Use the specific software to program pulse steps.
