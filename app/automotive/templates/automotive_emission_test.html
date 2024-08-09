@@ -4,12 +4,12 @@
 
     {% set test_templates = {
         "r10": "r10rev6.html",
-        "cispr25-63": "cispr25-63.html",
-        "cispr25-64": "cispr25-64.html",
-        "cispr25-65": "cispr25-65.html",
-        "7637-2-43": "iso_7637-2-43.html",
-        "tl81000-535": "tl_81000-535.html",
-        "tl81000-536": "tl_81000-536.html"
+        "cispr25-63": "emission/cispr25-63.html",
+        "cispr25-64": "emission/cispr25-64.html",
+        "cispr25-65": "emission/cispr25-65.html",
+        "7637-2-43": "emission/iso_7637-2-43.html",
+        "tl81000-535": "emission/tl_81000-535.html",
+        "tl81000-536": "emission/tl_81000-536.html"
     } %}
 
     {% include test_templates.get(test, "automotive_emission.html") %}
