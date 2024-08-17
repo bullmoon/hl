@@ -59,8 +59,9 @@ td {
   vertical-align: top;
 }
 
+/* Automotive style */
 .atmtv {
-  border-color: green;
+  border-color: #00A1DB;
   color: #00506E;
 }
 
@@ -81,7 +82,7 @@ th {
   /* Устанавливает ширину изображения */
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
   /* Добавляет тень */
-  border-radius: 7px;
+  border-radius: 5px;
   /* Добавляет скругленные углы */
   transition: box-shadow 0.3s ease-in-out;
   /* Добавляет плавный переход для тени */
@@ -111,4 +112,30 @@ th {
 .scope img {
   width: 90%;
   height: auto;
+}
+
+/* Military style */
+.mil {
+  border-color: #9FBF8F;
+  color: #364021;
+}
+
+.mil img {
+  display: block;
+  /* Преобразует изображения в блочные элементы */
+  margin: 0 auto;
+  /* Автоматически выравнивает по горизонтали */
+  width: 480px;
+  /* Устанавливает ширину изображения */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+  /* Добавляет тень */
+  border-radius: 5px;
+  /* Добавляет скругленные углы */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Добавляет плавный переход для тени */
+}
+
+.mil img:hover {
+  box-shadow: 0 10px 24px rgba(54, 63, 33, 1);
+  /* Увеличивает тень при наведении */
 }

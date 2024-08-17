@@ -1,0 +1,46 @@
+{% block content %}
+<h1 class="menu">Military Emission section</h1>
+
+<table class="demo">
+  <caption style="caption-side:top">
+    <img src="{{ url_for('military.static', filename='images/plane.jpg') }}" alt="Military Image"><br>
+    Emission Test List (based on MIL-STD-461)
+  </caption>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/military/emission/ce102">CE102</a></td>
+      <td>Conducted Emission, power leads, 10 kHz to 10 MHz</td>
+    </tr>
+    <tr>
+      <td><a href="...">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/emission/cispr25-64">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/emission/cispr25-65">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/emission/7637-2-43">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/emission/tl81000-535">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+    <tr>
+      <td><a href="/automotive/emission/tl81000-536">Military Emission section</a></td>
+      <td>Under construction</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.military-green--1-hex { color: #9FBF8F; }
+.military-green--2-hex { color: #718C5E; }
+.military-green--3-hex { color: #8DA67B; }
+.military-green--4-hex { color: #465934; }
+.military-green--5-hex { color: #364021; }
+
+/* Color Theme Swatches in RGBA */
+.military-green--1-rgba { color: rgba(158, 191, 142, 1); }
+.military-green--2-rgba { color: rgba(112, 140, 93, 1); }
+.military-green--3-rgba { color: rgba(140, 165, 123, 1); }
+.military-green--4-rgba { color: rgba(70, 89, 52, 1); }
+.military-green--5-rgba { color: rgba(54, 63, 33, 1); }
+
+/* Color Theme Swatches in HSLA */
+.military-green--1-hsla { color: hsla(100, 27, 65, 1); }
+.military-green--2-hsla { color: hsla(95, 19, 45, 1); }
+.military-green--3-hsla { color: hsla(94, 19, 56, 1); }
+.military-green--4-hsla { color: hsla(90, 26, 27, 1); }
+.military-green--5-hsla { color: hsla(79, 31, 19, 1); }

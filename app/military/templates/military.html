@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to the Military section</h1>
-    <img src="{{ url_for('military.static', filename='images/plane.jpg') }}" alt="Military Image">
+
+{% if category == "emission" %}
+        {% include "military_emission.html" %}
+    {% elif category == "susceptebility" %}
+        {% include "military_susceptebility.html" %}
+    {% else %}
+        {% include "military_emission.html" %}
+        {% include "military_susceptebility.html" %}
+{% endif %}
+   
 {% endblock %}

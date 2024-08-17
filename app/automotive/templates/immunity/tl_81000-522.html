@@ -1,0 +1,80 @@
+{% block content %}
+
+<h4 class="menu" >5.2.2 BCI testing</h4>
+<div class="atmtv">
+<table>
+    <caption align="top">Unless otherwise specified below, the requirements as per <a href="/automotive/immunity/11452-4">ISO 11452-4</a> apply to BCI testing.</caption>
+    <tbody>
+        <tr>
+            <td>Only the <mark>substitution</mark> method is permitted for BCI testing.<br>
+            Frequency range - 0.1-400 MHz</td>
+            <td>Deviating from ISO 11452-4, the test wiring harness must have a length<br><mark>between 1 700 mm and 2 000 mm</mark>.</td>
+        </tr>
+        <tr>
+            <td><p>The minimum dwell time is <mark>2 s.</mark></p>If the DUT reacts more slowly to interference, then the dwell time <b>must be increased accordingly</b>.<br><br>
+                <ul>The tests must be performed in:
+                <li><mark>common mode</mark> (ground cable in the current injection probe)</li>and
+                <li><mark>differential mode</mark> (ground cable outside of the current injection probe).</li>
+                </ul>
+                <ul><a href="/automotive/immunity/11452-4">When a DUT has multiple connectors, the test should be repeated with <mark>the injection probe clamped around each separate connector bundle</mark>, if applicable. Detailed connectors configuration to be tested shall be defined in the test plan and recorded in the test report.</a>
+                </ul></td>
+            <td><img src="/automotive/static/images/tl_81000-522/bci001.png"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <caption align="top">Increments</caption>
+    <tbody>
+        <tr>
+            <td>Testing must preferably be performed using a <mark>linear increment</mark>. The maximum frequency increments listed in table 6 apply here.<br>
+                A logarithmic increment may also be used as an alternative (see table 7). This must be agreed upon with the purchaser.</td>
+            <td><img src="/automotive/static/images/tl_81000-522/table6.png"><br>
+                <img src="/automotive/static/images/tl_81000-522/table7.png"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <caption align="top">Function Performance Status Classification (FPSC)</caption>
+    <tbody>
+        <tr>
+            <td>
+            <ul>The following status definitions as specified in ISO 11452-1 are used:
+                <li>Status I - The function behaves as specified before, during, and after the test</li>
+                <li>Status II - The function does not behave as specified during the test, but automatically returns to normal operation after the test</li>
+            </ul>
+            <ul>The disturbance (level) up to which this status must be met:
+                <li>L1 - Disturbance level up to which status I must be met</li>
+                <li>L2 - Disturbance level up to which at least status II must be met (status I is permissible as well)</li>
+            </ul>
+            <ul>Based on how customers are affected, there are three categories of effects:
+                <li>Category 1 <mark>(A)</mark> - Minor effects or negligible malfunctions of the DUT</li>
+                <li>Category 2 <mark>(B)</mark> - Effects or malfunctions of the DUT with an impact on comfort</li>
+                <li>Category 3 <mark>(C)</mark> - All significant effects or other effects and malfunctions of the DUT that do not fall into category 1 or category 2</li>
+            </ul>
+            <ul>The difference in test severity levels between each of the three categories is 4 dB.</ul></td>
+            <td><img src="/automotive/static/images/tl_81000-522/fpsc.png"><br>
+                <img src="/automotive/static/images/tl_81000-522/table9.png"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<table>
+    <caption align="top">Calibration&Test</caption>
+    <tbody>
+        <tr>
+            <td>The modulations and test levels are defined in table 8. Figure 5 shows the test levels with respect to frequency.<p></p>
+            <ul>In <mark>R&S EMC32 software</mark> already prepared 3 templates:
+                <li>"Automotive BCI Calibration (dwell time 0, CW)" - creates the calibration file</li>
+                <li>"Automotive BCI Test (dwell time 2 s, CW)" - uses the calibration file</li>
+                <li>"Automotive BCI Test (dwell time 2 s, AM)" - uses the calibration file</li>
+            </ul></td>
+            <td><img src="/automotive/static/images/tl_81000-522/table8.png"><br>
+                <img src="/automotive/static/images/tl_81000-522/figure5.png"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}
