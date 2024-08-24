@@ -1,6 +1,36 @@
 {% block content %}
-<div class="atmtv">
 <h4 class="menu" >5.2.4 Stripline</h4>
+<div class="atmtv">
+    <table>
+        <caption align="top">
+            Testing using the stripline method as per ISO <a href="/automotive/immunity/11452-5"><mark>11452-5</mark></a> is possible in exceptional cases. This may only be used following agreement with the purchaser.
+        </caption>
+        <thead>
+            <tr>
+                <th><ul>The useful frequency range of stripline is from 10 kHz to 400 MH.</ul>
+                    <img src="/automotive/static/images/tl_81000-524/common_setup.png"><br>
+                    <img src="/equipment/static/images/amp_power_forward.png"></th>
+                <th><img src="/automotive/static/images/tl_81000-524/common_setup_photo.png"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><ul>The minimum dwell time is <mark>2 s</mark>. If the DUT reacts more slowly to interference, then the dwell time <b>must be increased accordingly</b>.</ul>
+                <ul>The stripline method test must be performed with the maximum field strength as specified in figure 9. The FPSC must be performed as per table 13 and figure 10.</ul>
+                    <img src="/automotive/static/images/tl_81000-524/figure9.png"><br>
+                    <img src="/automotive/static/images/tl_81000-524/table13.png">
+                </td>
+                <td><img src="/automotive/static/images/tl_81000-524/table12.png"><br>
+                    <img src="/automotive/static/images/tl_81000-522/table6.png"><br>
+                    <img src="/automotive/static/images/tl_81000-522/table7.png"></td>
+                
+            </tr>
+            <tr>
+                <td>Hardware setup</td>
+                <td>Template</td>
+            </tr>
+        </tbody>
+    </table>
 
 </div>
 {% endblock %}
