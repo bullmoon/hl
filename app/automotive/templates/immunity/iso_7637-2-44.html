@@ -1,13 +1,17 @@
 {% block content %}
-
-<h1 class="menu">ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
-<p class="menu">ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
+<div  class="menu">
+<h1>ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
+<p>ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
 <p></p>
 <table>
-  <tr class="menu">
-    <th><img src="/automotive/static/images/7637-2/pulses.png" width="1024"></th>
+  <tr>
+    <th colspan="2"><img src="/automotive/static/images/7637-2/pulses.png" width="1024">
+      <p></p>
+      <img src="/automotive/static/images/7637-2/std_ref.png" width="1024"></th>
   </tr>
 </table>
+</div>
+
 <p></p>
 <div  class="atmtv">
 <table>
@@ -49,7 +53,9 @@
 <table>
     <thead></thead>
       <th>A simulation of transients due to supply disconnection from inductive loads connected in parallel with the DUT, as used in the vicle.<br>
-      500 pulses (if ISO 7637-2:2004 - 5000 pulses)</th>
+      500 pulses (if ISO 7637-2:2004 - 5000 pulses)
+      <p></p>
+      <p>Pulse 1 with V<sub>a</sub> = 0 V is used to generate pulse 6.</p></th>
       <th><img src="/automotive/static/images/7637-2/pulse_1_explain.png"></th>
     <tr>
       <td><ul>
@@ -88,11 +94,16 @@
     <th>Simulates transients due to wiring harness inductance when current is interrupted in a device connected in parallel with the DUT.</th>
     <th><img src="/automotive/static/images/7637-2/pulse_2a_explain.png"></th>
     <tr>
-      <td><img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
-      <td>Pay attention to the special boxs are appropriate for 12 and 24 V</td>
+      <td><img src="/automotive/static/images/7637-2/hl2226_pulse_2a.png"></td>
+      <td><ul>Pay attention to the special boxs are appropriate for 12 and 24 V</ul>
+        <img src="/automotive/static/images/7637-2/wavetek-178.jpg"></td>
     </tr>
     <tr>
-        <td><img src="/automotive/static/images/7637-2/table3.png"></td>
+        <td><img src="/automotive/static/images/7637-2/table3.png"><br>
+        <ul>TL 81000-2018:
+          <li>Maximum pulse repetition frequency: 5 Hz (t1 = 0.2 s).</li>
+          <li>5000 pulses, U<sub>s</sub>= +75 V, (check the tables 29 and 30 in 5.4.4.1.3 for other parameters)</li>
+        </ul></td>
         <td><img src="/automotive/static/images/7637-2/figure6.png"></td>
       </tr>
 </table>
