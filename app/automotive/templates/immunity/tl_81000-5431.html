@@ -1,0 +1,98 @@
+{% block content %}
+
+<div class="menu">
+    <h3 class="menu" >5.4.3 Pulsed interference on power supply cables</h3>
+    <h4 class="menu" >5.4.3.1 Interference immunity verification test</h4>
+</div>
+<div class="atmtv">
+<table>
+    <caption align="top"></caption>
+    <thead>
+        <tr>
+            <th>2018</th>
+            <th>2021</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><ul>Probe head:
+                <li>Division ratio ≥ 10/1</li>
+                <li>Permissible input voltage ≥ 1 kV</li>
+                <li>Length of connecting cable ≤ 150 cm</li>
+                <li>Length of ground cable ≤ 10 cm</li>
+            </ul></td>
+            <td><ul><b>Changes</b><br>
+                The following changes have been made to TL 81000: 2021-06:
+                <li>b) Section 5.4.2.5 "Test pulse 48a": Figure 33 added;</li>
+                <li>c) Section 5.4.2.6 "Test pulse 48": Figure 34 added.</li>
+                </ul></td>
+        </tr>
+        <tr>
+            <td><ul><mark>5.4.3 Functional states</mark><br>
+                The following functional states can occur during the course of and as a result of the test:
+                <ul><b>Functional state A</b>
+                    <li>All device/system functions perform as specified during and after exposure to the disturbance.</li></ul>
+                <ul><b>Functional state B</b>
+                    <li>All device/system functions perform as specified during exposure. However, one or more functions may be outside the specified limit deviation. All functions automatically return to the specified limits once exposure has ended. Memory functions must remain in functional state A.</li></ul>
+                <ul><b>Functional state C</b>
+                    <li>One or more device/system functions do not perform as specified during exposure. However, they return to normal operation once this exposure has ended.</li></ul>
+                <ul><b>Functional state D</b>
+                    <li>One or more device/system functions do not perform as specified during exposure and do not return to normal operation until this exposure has ended and the device/system has been restarted ("reset") by user intervention.</li></ul>
+                <ul><b>Functional state E</b>
+                    <li>One or more device/system functions do not perform as specified during and after exposure and cannot be returned to normal functioning without repairing or replacing the pertinent device or system.</li></ul>
+                </ul></td>
+            <td><ul>5.4 Pulse
+                <li>5.4.1 Test equipment</li>
+                <li>5.4.2 Pulse forms</li>
+                <li>5.4.3 Pulsed interference on power supply cables</li>
+                <li>5.4.4 Pulsed interference on sensor cables</li></ul></td>
+        </tr>
+        <tr>
+            <td>The setup for an artificial network, including an impedance vs. frequency curve, is defined in
+                ISO 7637-2. A schematic circuit diagram is shown in figure 25.</td>
+            <td><img src="/automotive/static/images/tl_81000_54/lisn_schima.png"></td>
+        </tr>
+    </tbody>
+</table>
+<h5 class="menu" id="pulse1">5.4.2.1 Test pulse 1</h5>
+<table>
+    <caption align="top">Based on <a href="/automotive/immunity/7637-2-44#pulse1">5.6.1 of ISO 7637-2</a></caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><ul>Pulse repetition frequency of 0.2 Hz (t1 = 5 s), t2 = duration of voltage off period (<b>200 ms by tables 29/32</b>), t3 = minimum possible time between the moment the battery is switched off and the moment the pulse starts. Wavetek settings:
+                <li>Frequency - 2.75 Hz (t<sub>1</sub>=5 s) <mark>should be clarify in test plan</mark></li>
+                <li>Function - square</li>
+                <li>Amplitude - 12 (up to 18), p-p</li>
+                <li>Mode - triggered (continous?)</li>
+                <li>Trigger - internal</li>
+                <li>time - 30 s</li>
+                <li>Out - "ON" to start</li>
+            </ul></td>
+            <td><img src="/automotive/static/images/7637-2/figure5.png"></td>
+        </tr>
+        <tr>
+            <td><ul><mark>2018</mark><br>
+                <img src="/automotive/static/images/tl_81000_54/table29_2018.png">
+                <li>Pulse 1 normally does not occur on terminal 30 because it requires ignition system switch-off (or a load circuit by means of a switch). However, pulse 1 might occur on these terminals when a fuse is blown or when the battery is disconnected. Because of this, <b>a test with 50 pulses is required for these inputs as well</b>. In this case functional state D is permissible.</li>
+            </ul>
+            <ul><mark>2021</mark><br>
+                <img src="/automotive/static/images/tl_81000_54/table32_2021.png">
+                <li>Pulse 1 typically does not occur on terminal 30 because it requires ignition system switch-off (or a load circuit by means of a switch). However, pulse 1 might occur on these terminals when a fuse is blown or when the battery is disconnected. <b>A test with 50 pulses is therefore required for these inputs as well</b>. However, status II is permissible.</li>
+            </ul></td>
+            <td><ul><b>5.4.4.1.1 2018 (5.4.3.1.1 2021)</b><br> The DUT is connected to the power supply via the substitute interference source (pulse generator)
+                as specified in figure 35 and figure 36. The connecting cable between the substitute interference
+                source and the interference sink must have a <mark>length of (50 ±5) cm for pulses 1</mark>, 2, 5b, and 6, and a
+                length of (20 ±2) cm for pulses 3a and 3b.</ul>
+                <img src="/automotive/static/images/tl_81000_54/test_setup_p1-2-3.png"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}
