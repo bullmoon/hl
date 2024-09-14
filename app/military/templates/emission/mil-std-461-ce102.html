@@ -1,24 +1,92 @@
 {% block content %}
 
-<h1 class="menu">MIL-STD-461F<br>
+<h1 class="menu">MIL-STD-461G<br>
     5.5 CE102, conducted emission, power leads, 10 kHz to 10 MHz</h1>
-
+<p>Bonding...</p>
 <div class="mil">
+
+    <table>
+        <caption align="top">
+            Applicability
+        </caption>
+        <thead>
+            <tr>
+                <th>This requirement is applicable from 10 kHz to 10 MHz for all power leads, including returns, which obtain power from other sources not part of the EUT.</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <table>
+        <caption align="top">
+            Limits, check and measurement setup
+        </caption>
+        <thead>
+            <tr>
+                <th><img src="/military/static/images/ce102g/figure_ce102-1.png"></th>
+                <th><img src="/military/static/images/ce102g/figure_ce102-2.png"></th>
+                <th><img src="/military/static/images/ce102g/figure_ce102-3.png"></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
 <table>
-    <caption>
-        Caption Caption Caption Caption Caption Caption
+    <caption align="top">
+        Basic setups
     </caption>
     <thead>
         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
+            <th><img src="/military/static/images/ce102g/figure_2.png"></th>
+            <th><img src="/military/static/images/ce102g/figure_4.png"></th>
+        </tr>
+        <tr>
+            <th><img src="/military/static/images/ce102g/figure_3.png"></th>
+            <th><img src="/military/static/images/ce102g/figure_5.png"></th>
         </tr>
     </thead>
     <tbody>
+        
+    </tbody>
+</table>
+
+<table>
+    <caption align="top">
+        Measurement system integrity check (5.5.3.4)
+    </caption>
+    <thead>
+    </thead>
+    <tbody>
         <tr>
-            <td><img src="/static/images/hl.png"></td>
-            <td><img src="/static/images/hl.png"></td>
+            <td><ul>Apply a signal level of 90 dBμV at 10.5 kHz and 100 kHz to the power output terminal of the LISN.
+            <li>At 10.5 kHz and 100 kHz, use an oscilloscope, <mark>in high impedance mode</mark>, to verify that there is a proper signal level at the LISN and verify that it is sinusoidal.</li>
+            <li>After establishing the proper signal at the LISN, <b>disconnect LISN</b> and measure resulting voltage using an oscilloscope <mark>with 50 ohm input impedance</mark>.</li>
+            <li>The ratio of the LISN voltage to the 50 ohm voltage measurement must be within the following tolerances:<br>at 10.5 kHz = -14 dB (+1 dB/-2 dB)<br>at 100 kHz = -3 dB (+1 dB/-2 dB).</li>
+            </ul>
+            <img src="/military/static/images/ce102g/cal_scope.png">
+        </td>
+        <td><img src="/military/static/images/ce102g/cal_setup_photo.png"></td>
         </tr>
+        <tr>
+            <td>Apply a signal level that is at least 6 dB below the limit at 10.5 kHz, 100 kHz, 1.95 MHz and 9.8 MHz to the power output terminal of the LISN.<br>
+                At 10.5 kHz and 100 kHz, use an oscilloscope to calibrate the signal level.<br>
+                At 1.95 MHz and 9.8 MHz, use a calibrated output level directly from a 50 Ω signal generator.</td>
+            <td><img src="/military/static/images/ce102g/cal_plots.png"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption align="top">
+        Ambient and test
+    </caption>
+    <thead>
+    </thead>
+    <tbody>
+        <td><img src="/military/static/images/mil-std-461/g/table_2.png"></td>
+        <td><img src="/military/static/images/ce102g/ambient.png"></td>
     </tbody>
 </table>
 </div>
