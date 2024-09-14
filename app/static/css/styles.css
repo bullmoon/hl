@@ -124,6 +124,14 @@ th {
   color: #364021;
 }
 
+.mil td,
+th {
+  width: 50%;
+  border: 1px solid;
+  padding: 10px;
+  /* Добавляем отступы */
+}
+
 .mil img {
   display: block;
   /* Преобразует изображения в блочные элементы */
