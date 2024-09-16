@@ -15,7 +15,7 @@ def military_default():
 
 @military.route('/emission/<test>')
 def military_emission(test):
-    valid_tests = ["ce102", "re102"]
+    valid_tests = ["ce102", "re102", "re102v2"]
     if test in valid_tests:
         return render_template('military_emission_test.html', test=test)
     else:
