@@ -10,7 +10,7 @@
     }
 </style>
 
-<h1 class="menu">MIL-STD-461G<br>
+<h1 class="menu">MIL-STD-461F,G<br>
     5.18 RE102, Radiated emissions, electric field.</h1>
 
 <table>
@@ -26,7 +26,27 @@
 </table>
 
 <div class="mil">
-<table>
+
+    <table>
+        <caption align="top">
+            Basic setups
+        </caption>
+        <thead>
+            <tr>
+                <th><img src="/military/static/images/ce102g/figure_2.png"></th>
+                <th><img src="/military/static/images/ce102g/figure_4.png"></th>
+            </tr>
+            <tr>
+                <th><img src="/military/static/images/ce102g/figure_3.png"></th>
+                <th><img src="/military/static/images/ce102g/figure_5.png"></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <table>
     <caption align="top">
         Limits:
     </caption>
@@ -40,7 +60,23 @@
                     <option value="v2">for submarine applications</option>
                     <option value="v3">for aircraft and space system applications</option>
                     <option value="v4">for ground applications</option>
-                </select></td>
+                </select>
+            <p></p>
+                <table id="data-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            <p></p>
+            <ul><b>Set or load spectrum analyser settings:</b>
+                <li>Level</li>
+                <li>Factors</li>
+                <li>Sweep time</li>
+                <li>RBW</li>
+                <li>VBW</li>
+                <li>Points</li>
+                <li>Reference level</li>
+            </ul>
+            </td>
             <td><!-- surface ship applications -->
                 <section id="version-1" class="version-content">
                     <img src="/military/static/images/re102g/figure_re102-1.png">
@@ -61,13 +97,17 @@
                     <img src="/military/static/images/re102g/figure_re102-4.png">
                 </section>
             </td>
+            <td>
+                <img src="/military/static/images/mil-std-461/g/figure_1.png">
+            </td>
         </tr>
     </tbody>
 </table>
 <p><b>HOW TO USE CALCULATOR?</b></p>
+
 <table>
     <caption align="top">
-        Calibration:
+        <mark>Calibration:</mark>
     </caption>
     <thead></thead>
     <tbody>
@@ -92,21 +132,38 @@
             <td><img src="/military/static/images/re102g/calibration.png"></td>
         </tr>
         <tr>
-            <td>Using the system check path of Figure RE102-5, perform the following evaluation of the overall measurement system from the coaxial cable end used at each antenna to the data output device at 10.5 kHz (only for measurements implemented between 10 kHz and 2 MHz), 2.1 MHz, 12 MHz and 29.5 MHz for active rod antennas, 197 MHz for the biconical antenna, 990 MHz for the large double ridge horn and 17.5 GHz for the small double ridge horn.</td>
-            <td><img src="/military/static/images/re102g/calibration_table.png"></td>
+            <td>
+            <ul>
+                <b>(461F)</b> Using the system check path of Figure RE102-5, perform the following evaluation of the overall measurement system from each antenna to the data output device at the <mark>highest measurement frequency of the antenna</mark>.<br>
+                For active rod antennas, the evaluation shall be performed at <mark>the lowest frequency</mark> of test, at <mark>a mid-band frequency</mark>, and at <mark>the highest frequency</mark> of test.
+            </ul>
+            <ul>
+                <b>(461G)</b> Using the system check path of Figure RE102-5, perform the following evaluation of the overall measurement system from the coaxial cable end used at each antenna to the data output device at <mark>10.5 kHz</mark> (only for measurements implemented between 10 kHz and 2 MHz), <mark>2.1 MHz</mark>, <mark>12 MHz</mark> and <mark>29.5 MHz</mark> for active rod antennas, <mark>197 MHz</mark> for the biconical antenna, <mark>990 MHz</mark> for the large double ridge horn and <mark>17.5 GHz</mark> for the small double ridge horn.
+            </ul>
+            </td>
+            <td><img src="/military/static/images/mil-std-461/re102fg_cal_ver.png"></td>
         </tr>
     </tbody>
 </table>
 
 <table>
     <caption align="top">
-        Propagation:
+        <mark>Propagation:</mark>
     </caption>
     <thead></thead>
     <tbody>
         <tr>
             <td><img src="/equipment/static/images/hl_5759.png"></td>
-            <td><img src="/military/static/images/re102g/propagation_photo.png"></td>
+            <td>
+                <ul>Frequencies:
+                    <li>10.5<sup>*</sup> kHz</li>
+                    <li>30 MHz</li>
+                    <li>200 MHz</li>
+                    <li>1000 MHz</li>
+                    <li>18000 MHz</li>
+
+                </ul>
+                <img src="/military/static/images/re102g/propagation_photo.png"></td>
         </tr>
     </tbody>
 </table>
@@ -146,24 +203,7 @@ enclosure are within the 3 dB beamwidth of the antenna.
         </tr>
     </tbody>
 </table>
-
-<script>
-    // Функция для изменения отображаемой версии
-    document.getElementById('version-selector').addEventListener('change', function() {
-        // Сначала скрываем все версии
-        document.querySelectorAll('.version-content').forEach(function(section) {
-            section.classList.remove('active');
-        });
-
-        // Показываем выбранную версию
-        const selectedVersion = this.value;
-        document.getElementById('version-' + selectedVersion.charAt(1)).classList.add('active');
-    });
-
-    // По умолчанию отображаем первую версию
-    document.getElementById('version-1').classList.add('active');
-</script>
-
-
 </div>
+
+<script src="{{ url_for('military.static', filename='js/ce102-script.js') }}"></script>
 {% endblock %}

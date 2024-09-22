@@ -1,0 +1,27 @@
+[
+    {
+        "Frequency, Mhz": "2.1",
+        "Antenna polarization": "Vertical",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    },
+    {
+        "Frequency, Mhz": "12.0",
+        "Antenna polarization": "Vertical",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    },
+    {
+        "Frequency, Mhz": "29.5",
+        "Antenna polarization": "Vertical",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    }
+]
+]

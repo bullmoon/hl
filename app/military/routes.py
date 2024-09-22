@@ -3,7 +3,7 @@ from . import military
 
 @military.route('/<category>')
 def military_index(category):
-    valid_categories = ["emission", "susceptebility"]
+    valid_categories = ["emission", "susceptibility"]
     if category in valid_categories:
         return render_template('military.html', category=category)
     else:
@@ -21,10 +21,10 @@ def military_emission(test):
     else:
         return render_template('military.html', test=None)
 
-@military.route('/susceptebility/<test>')
-def military_susceptebility(test):
+@military.route('/susceptibility/<test>')
+def military_susceptibility(test):
     valid_tests = ["rs103"]
     if test in valid_tests:
-        return render_template('military_susceptebility_test.html', test=test)
+        return render_template('military_susceptibility_test.html', test=test)
     else:
         return render_template('military.html', test=None)
