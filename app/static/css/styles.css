@@ -5,6 +5,7 @@ body {
   padding: 20px;
   /* Add padding around the content */
   border-radius: 20px;
+  #padding-top: 80px; /* отступ сверху, чтобы контент не перекрывал navbar */
 }
 
 .navbar {
@@ -17,6 +18,9 @@ body {
   /* Пример цвета фона для navbar */
   border-bottom: 3px solid #00364A;
   /* Пример границы для разделения */
+}
+.navbar a:hover {
+  color: #007BFF;
 }
 
 h1,
