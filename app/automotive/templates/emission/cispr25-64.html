@@ -1,47 +1,37 @@
 {% block content %}
 <div class="atmtv">
 <h1 class="menu">6. Measurement of components and modules<br>
-    6.3 Conducted emissions from components/modules - Voltage method</h1>
+    6.4 Conducted emissions from components/modules – current probe method</h1>
     <table>
-        <caption>
-          Front-end web developer course 2021
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Person</th>
-            <th scope="col">Most interest in</th>
-            <th scope="col">Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Chris</th>
-            <td>HTML tables</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <th scope="row">Dennis</th>
-            <td>Web accessibility</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <th scope="row">Sarah</th>
-            <td>JavaScript frameworks</td>
-            <td>29</td>
-          </tr>
-          <tr>
-            <th scope="row">Karen</th>
-            <td>Web performance</td>
-            <td>36</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2">Average age</th>
-            <td>33</td>
-          </tr>
-        </tfoot>
-      </table>
+      <caption align="top">Test setup</caption>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td><ul>
+              <li>The current probe to be used shall meet the requirements of CISPR 16-1-2 at frequencies below 200 MHz.</li>
+              <li>The current probe shall be mounted around the complete harness (<mark>including all wires</mark>).</li>
+              <li>If the EUT has <mark>multiple connectors</mark> on the unit resulting in multiple wire bundles, <mark>the test plan shall define which wires</mark> shall be included in the probe for measurement.</li>
+              <li><b>In the absence of any definition, measurements shall be made for each bundle (connector) separately as well as combined (i.e. all together).</b></li>
+              <li>If the EUT wiring has too many wires to be accommodated in the measurement probe, the test plan can define the wires to be measured and this shall be included in the test report.</li>
+              </ul>
+              <ul>Measure the emissions with the probe positioned <mark>50 mm and 750 mm</mark> from the EUT.</ul>
+          </td>
+          <td><img src="/automotive/static/images/cispr25-64/figure13_1.png"></td>
+          <td><img src="/automotive/static/images/cispr25-64/figure13_2.png"></td>
+        </tr>
+      </tbody>
+    </table>
+<p></p>
+    <table>
+      <caption align="top">Limits</caption>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td><img src="/automotive/static/images/cispr25/table2.png"></td>
+          <td><img src="/automotive/static/images/cispr25-64/table7.png"></td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 
 
