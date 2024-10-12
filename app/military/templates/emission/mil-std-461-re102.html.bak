@@ -1,0 +1,118 @@
+{% block content %}
+
+<h1 class="menu">MIL-STD-461G<br>
+    5.18 RE102, Radiated emissions, electric field.</h1>
+
+<table>
+    <caption align="top">
+        The requirement is applicable as follows:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr align="center">
+            <td><img src="/military/static/images/re102g/applicable.png" width="1024"></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="mil">
+<table>
+    <caption align="top">
+        Limits:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td><img src="/military/static/images/re102g/figure_re102-1.png"></td>
+            <td><img src="/military/static/images/re102g/figure_re102-3.png"></td>
+        </tr>
+        <tr>
+            <td><img src="/military/static/images/re102g/figure_re102-2.png"></td>
+            <td><img src="/military/static/images/re102g/figure_re102-4.png"></td>
+        </tr>
+    </tbody>
+</table>
+<p><b>HOW TO USE CALCULATOR?</b></p>
+<table>
+    <caption align="top">
+        Calibration:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td colspan="2">Rod antenna</td>
+        </tr>
+        <tr>
+            <td><ul>EUT setup
+                <li>For rod antenna measurements, electrical bonding of the counterpoise is prohibited.</li>
+                <li>The required configuration is shown on Figure RE102-6.</li>
+                <li>The shield of the coaxial cable from the rod antenna matching network shall be electrically bonded to the floor in a length as short as possible (not to exceed 10 cm excess length).</li>
+                <li>A ferrite sleeve with 20 to 30 ohms impedance (lossy with minimal inductance) at 20 MHz shall be placed near the center of the coaxial cable length between the antenna matching network and the floor.</li></ul>
+                <img src="/military/static/images/re102g/figure_re102-8.png"></td>
+            <td><img src="/military/static/images/re102g/rod_check_photo01.png"><br>
+                <img src="/military/static/images/re102g/photo-collage.png"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Other</td>
+        </tr>
+        <tr>
+            <td><img src="/military/static/images/re102g/figure_re102-5.png"></td>
+            <td><img src="/military/static/images/re102g/calibration.png"></td>
+        </tr>
+        <tr>
+            <td>Using the system check path of Figure RE102-5, perform the following evaluation of the overall measurement system from the coaxial cable end used at each antenna to the data output device at 10.5 kHz (only for measurements implemented between 10 kHz and 2 MHz), 2.1 MHz, 12 MHz and 29.5 MHz for active rod antennas, 197 MHz for the biconical antenna, 990 MHz for the large double ridge horn and 17.5 GHz for the small double ridge horn.</td>
+            <td><img src="/military/static/images/re102g/calibration_table.png"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption align="top">
+        Propagation:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td><img src="/equipment/static/images/hl_5759.png"></td>
+            <td><img src="/military/static/images/re102g/propagation_photo.png"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption align="top">
+        Test:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td>The number of required antenna positions depends on the size of the test setup boundary and the number of enclosures included in the setup.
+                <ul>For testing <mark>below 200 MHz</mark>, use the following criteria to determine the individual antenna positions.
+                <li>For setups with the side edges of the boundary 3 meters or less,
+                    <mark>one position is required</mark> and the antenna shall be centered with
+                    respect to the side edges of the boundary.</li>
+                <li>For setups with the side edges of the boundary greater than 3
+                    meters, use multiple antenna positions at spacings as shown on
+                    Figure RE102-7. Determine the number of antenna positions (N)
+                    by dividing the edge-to-edge boundary distance (in meters) by 3
+                    and rounding up to an integer.</li>
+                </ul>
+                <ul>
+                    For testing <mark>from 200 MHz up to 1 GHz</mark>, place the antenna in a sufficient
+number of positions such that the entire area of each EUT enclosure and <mark>the first 35 cm of cables and leads</mark> interfacing with the EUT
+enclosure are within the 3 dB beamwidth of the antenna.
+                </ul>
+                <ul>For testing <mark>at 1 GHz and above</mark>, place the antenna in a sufficient
+number of positions such that the entire area of each EUT enclosure
+and <mark>the first 7 cm of cables and leads</mark> interfacing with the EUT
+enclosure are within the 3 dB beamwidth of the antenna.
+                </ul>
+                <img src="/military/static/images/re102g/figure_re102-7.png"><br>
+                <img src="/military/static/images/re102g/test_rod.png"></td>
+            <td><img src="/military/static/images/re102g/figure_re102-6.png"><br>
+                <img src="/military/static/images/mil-std-461/g/table_2.png"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}

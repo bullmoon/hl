@@ -96,6 +96,15 @@ th {
   /* Добавляет плавный переход для тени */
 }
 
+.atmtv img.lazyload {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.atmtv img.lazyloaded {
+  opacity: 1;
+}
+
 .atmtv img:hover {
   box-shadow: 0 10px 24px rgba(0, 80, 110, 1);
   /* Увеличивает тень при наведении */

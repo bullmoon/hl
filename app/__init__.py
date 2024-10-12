@@ -20,5 +20,8 @@ def create_app():
 
     from .software import software as software_blueprint
     app.register_blueprint(software_blueprint, url_prefix='/software')
+
+    from .calculators import calculators as calculators_blueprint
+    app.register_blueprint(calculators_blueprint, url_prefix='/calculators')
     
     return app

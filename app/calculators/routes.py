@@ -1,10 +1,10 @@
 from flask import render_template
 import os
 import json
-from . import military
+from . import calculators
 
 # Path to the JSON file (placed in static folder)
-DATA_FILE = os.path.join(military.static_folder, 'data', 're102g_v1.json')
+DATA_FILE = os.path.join(calculators.static_folder, 'data', 're102g_v1.json')
 
 # Function to load JSON data
 def load_data():
@@ -17,27 +17,27 @@ VALID_CATEGORIES = {
     "susceptibility": ["rs103"]
 }
 
-@military.route('/')
-def military_default():
+@calculators.route('/')
+def calculators_default():
     """Default route."""
-    return render_template('military.html')
+    return render_template('calculators.html')
 
-@military.route('/<category>')
-def military_index(category):
+@calculators.route('/<category>')
+def calculators_index(category):
     """Route for categories."""
     if category in VALID_CATEGORIES:
-        return render_template('military.html', category=category)
+        return render_template('calculators.html', category=category)
     else:
-        return render_template('military.html', category=None)
+        return render_template('calculators.html', category=None)
     
-@military.route('/<category>/<test>')
-def military_test(category, test):
+@calculators.route('/<category>/<test>')
+def calculators_test(category, test):
     """Route for test in categories."""
     tests = VALID_CATEGORIES.get(category)
     if tests and test in tests:
         data = load_data()  # Load data from JSON
-        template = f"military_{category}_test.html"
+        template = f"calculators_{category}_test.html"
         # return render_template(template, test=test)
         return render_template(template, test=test, data=data)  # Pass JSON data to template
     else:
-        return render_template('military.html', test=None)
+        return render_template('calculators.html', test=None)
