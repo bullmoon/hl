@@ -9,92 +9,79 @@
     <thead></thead>
     <tbody>
       <tr>
-        <td>Software:</td>
-        <td>R&S Elektra (on the cart #8)</td>
-      </tr>
-      <tr>
-        <td>Antennas & ranges:</td>
-        <td><img src="/automotive/static/images/cispr25-65/antennas.png"></td>
-      </tr>
-      <tr>
-        <td>Setups:</td>
-        <td>
-          <li><a href="#rod">rod antenna test setup</a> (<mark>150 kHz - 30 MHz</mark>)</li>
-          <li><a href="#biconical">biconical antenna test setup</a> (<mark>30 - 200 MHz</mark>)</li>
-          <li><a href="#log">log periodic antenna test setup</a> (<mark>200 - 1000 MHz</mark>)</li>
-          <li><a href="#horn">horn antenna test setup</a> (<mark>above 1000 MHz</mark>)</li>
-        </td>
-      </tr>
-      <tr>
-        <td><p>It is extremely important to use Isolation Transformer (Otherwise, you can face with unexpected ambient noise)</p></td>
-        <td><img src="/equipment/static/images/hl_2684.png"></td>
+        <td><ul>Antennas & ranges:</ul>
+        <img src="/automotive/static/images/cispr25-65/antennas.png"></td>
+      <td><ul>
+        <li><a href="#rod">rod antenna test setup</a> (<mark>150 kHz - 30 MHz</mark>)</li>
+        <li><a href="#biconical">biconical antenna test setup</a> (<mark>30 - 200 MHz</mark>)</li>
+        <li><a href="#log">log periodic antenna test setup</a> (<mark>200 - 1000 MHz</mark>)</li>
+        <li><a href="#horn">horn antenna test setup</a> (<mark>above 1000 MHz</mark>)</li></ul></td>
+        <td><ul>It is extremely important to use Isolation Transformer (Otherwise, you can face with unexpected ambient noise)</ul>
+          <img src="/equipment/static/images/hl_2684.png"></td>
       </tr>
       <tr>
         <td>
-          <ul>Pay attention to:
+          <ul><mark>Up to 1 GHz</mark>:
             <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
             <li>LNA 1187 has two inputs for different ranges</li>
           </ul>
-        </td>
-        <td><img src="/equipment/static/images/hl_1187.png"></td>
-      </tr>
-      <tr>
-        <td>
-          <ul id="rod">Rod antenna
-            <li>Rod Antenna must be connected with reference plane (Grounding connection (full width bond between
-              counterpoise and reference ground plane) page 61, figure 15)</li>
-            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
-            <li>Gain must be switched OFF</li>
-          </ul>
-        </td>
-        <td><img src="/automotive/static/images/cispr25-65/rod_antenna_setup.png"></td>
-      </tr>
-      <tr>
-        <td><img src="/automotive/static/images/cispr25-65/rod_photo_01.png"></td>
-        <td><img src="/automotive/static/images/cispr25-65/rod_photo_02.png"></td>
-      </tr>
-      <tr>
-        <td>
-          <ul id="biconical">Biconical antenna
-            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
-            <li>...</li>
-          </ul>
-        </td>
-        <td><img src="/automotive/static/images/cispr25-65/biconical_antenna_setup.png"></td>
-      </tr>
-      <tr>
-        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_01.png"></td>
-        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_02.png"></td>
-      </tr>
-      <tr>
-        <td>
-          <ul id="log">Log periodic antenna
-            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
-            <li>...</li>
-          </ul>
-        </td>
-        <td><img src="/automotive/static/images/cispr25-65/logperiodic_antenna_setup.png"></td>
-      </tr>
-      <tr>
-        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_01.png"></td>
-        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_02.png"></td>
-      </tr>
-      <tr>
-        <td>
-          <ul id="horn">Horn antenna (Double Ridged Horn Antennas only!)
-            <li>Available antennas: HL 4114 (red), HL 4474 (blue), HL 4432 (grey)</li>
-          </ul>
-            <img src="/automotive/static/images/cispr25-65/drh.png">
-        </td>
-        <td><img src="/automotive/static/images/cispr25-65/horn_antenna_setup.png"></td>
-      </tr>
-      <tr>
-        <td>
-          <ul>LNA
+          <ul><mark>Above 1 GHz</mark>:
             <li>Replace LNA HL 1187 (up to 1 GHz) to LNA HL 4932 (upper 1 GHz)</li></td>
           </ul>
+        </td>
+        <td><img src="/equipment/static/images/hl_1187.png"></td>
         <td><img src="/equipment/static/images/hl_4932.png"></td>
       </tr>
+      <tr id="rod">
+        <td><img src="/automotive/static/images/cispr25-65/rod_antenna_setup.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/rod_photo_01.png">
+          <ul>
+            <li>Rod Antenna must be connected with reference plane (Grounding connection (full width bond between
+              counterpoise and reference ground plane) page 61, figure 15)</li>
+          </ul></td>
+        <td><img src="/automotive/static/images/cispr25-65/rod_photo_02.png">
+          <ul>
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>Gain must be switched OFF</li>
+          </ul></td>
+      </tr>
+      <tr id="biconical">
+        <td><img src="/automotive/static/images/cispr25-65/biconical_antenna_setup.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_01.png">
+          <ul>
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>...</li>
+          </ul></td>
+        <td><img src="/automotive/static/images/cispr25-65/biconical_photo_02.png"></td>
+      </tr>
+      <tr id="log">
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_antenna_setup.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_01.png">
+          <ul>Log periodic antenna
+            <li>Use Pre-Amplifier LNA 1187 for 30 MHz to 1 GHz (Internal Pre-Amplifier ESU40 must be disabled)</li>
+            <li>...</li>
+          </ul></td>
+        <td><img src="/automotive/static/images/cispr25-65/logperiodic_photo_02.png"></td>
+      </tr>
+      <tr id="horn">
+        <td><img src="/automotive/static/images/cispr25-65/horn_antenna_setup.png"></td>
+        <td><img src="/automotive/static/images/cispr25-65/drh.png"></td>
+        <td>
+          <ul>Horn antenna (Double Ridged Horn Antennas only!)
+            <li>Available antennas: HL 4114 (red), HL 4474 (blue), HL 4432 (grey)</li>
+          </ul>
+        </td>
+      </tr>
+      
+      
+      
+      
+      <tr>
+        <td>
+          
+        
+      </tr>
+
       <tr>
         <td><img src="/automotive/static/images/cispr25-65/limits_alse.png"></td>
         <td><img src="/automotive/static/images/cispr25-65/limits_alse_mobile.png"></td>
