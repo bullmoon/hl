@@ -6,6 +6,7 @@ body {
   /* Add padding around the content */
   border-radius: 20px;
   #padding-top: 80px; /* отступ сверху, чтобы контент не перекрывал navbar */
+  caption-side: top;
 }
 
 .navbar {
@@ -143,6 +144,10 @@ th {
   border: 1px solid;
   padding: 10px;
   /* Добавляем отступы */
+}
+
+.mil caption {
+  caption-side: top !important;
 }
 
 .mil img {

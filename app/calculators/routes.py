@@ -2,9 +2,10 @@ from flask import render_template
 import os
 import json
 from . import calculators
+import pandas as pd
 
 # Path to the JSON file (placed in static folder)
-DATA_FILE = os.path.join(calculators.static_folder, 'data', 're102g_v1.json')
+DATA_FILE = os.path.join(calculators.static_folder, 'data', 'antenna_exp.json')
 
 # Function to load JSON data
 def load_data():

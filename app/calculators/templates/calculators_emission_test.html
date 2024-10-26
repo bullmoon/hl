@@ -1,0 +1,26 @@
+<h1>Emission Test: {{ test }}</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Antenna, HL</th>
+            <th>Frequency, MHz</th>
+            <th>Min Antenna Exposed area, m</th>
+            <th>Limit, dBuV</th>
+            <th>Margin, dB</th>
+            <th>Verdict</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row['Antenna, HL'] }}</td>
+            <td>{{ row['Frequency, MHz'] }}</td>
+            <td>{{ row['Min Antenna Exposed area, m'] }}</td>
+            <td>{{ row['Limit, dBuV'] }}</td>
+            <td>{{ row['Margin, dB'] }}</td>
+            <td>{{ row['Verdict'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

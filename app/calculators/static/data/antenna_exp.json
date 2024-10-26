@@ -1,0 +1,22 @@
+[
+    {
+        "Antenna, HL":"4605",
+        "Frequency, MHz":"2-30",
+        "Min Antenna Exposed area, m":"3.000"
+    },
+    {
+        "Antenna, HL":"0032",
+        "Frequency, MHz":"30-200",
+        "Min Antenna Exposed area, m":"3.000"
+    },
+    {
+        "Antenna, HL":"4423",
+        "Frequency, MHz":"200-500",
+        "Min Antenna Exposed area, m":"0.764"
+    },
+    {
+        "Antenna, HL":"4423",
+        "Frequency, MHz":"500-1000",
+        "Min Antenna Exposed area, m":"0.497"
+    }
+]

@@ -1,0 +1,92 @@
+{% block content %}
+
+<h1 class="menu">MIL-STD-461G<br>
+    5.21 RS103, radiated susceptibility, electric field.</h1>
+
+<table>
+    <caption align="top">
+        The requirement is applicable as follows:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul>RS103 applicability.
+                    <li>2 MHz to 30 MHz - Army, Navy and optional* for all others</li>
+                    <li>30 MHz to 18 GHz - All</li>
+                    <li>18 GHz to 40 GHz - Optional* for all</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="mil">
+
+    <table>
+        <caption align="top">
+            Basic setups
+        </caption>
+        <thead>
+            <tr>
+                <th><img src="/military/static/images/mil-std-461/f/figure_2.png"></th>
+                <th><img src="/military/static/images/mil-std-461/f/figure_3.png"></th>
+                <th><img src="/military/static/images/mil-std-461/f/figure_4.png"></th>
+            </tr>
+            <tr>
+                <th><img src="/military/static/images/mil-std-461/g/figure_2.png"></th>
+                <th><img src="/military/static/images/mil-std-461/g/figure_3.png"></th>
+                <th><img src="/military/static/images/mil-std-461/g/figure_4.png"></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+
+<table>
+    <caption align="top">
+        Test:
+    </caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <ul>Antennas shall be placed 1 meter or greater from the test setup boundary as follows:
+                <li>2 MHz to 200 MHz<br>
+                    Center the antenna between the edges of the test setup boundary. The boundary includes all enclosures of the EUT and the 2 meters of exposed interconnecting and power leads</li>
+                <li>200 MHz and above<br>
+                    Multiple antenna positions may be required as shown on Figure RS103-2</li></ul>
+                    <ul>
+                        For testing <mark>from 200 MHz up to 1 GHz</mark>, place the antenna in a sufficient
+    number of positions such that the entire area of each EUT enclosure and <mark>the first 35 cm of cables and leads</mark> interfacing with the EUT
+    enclosure are within the 3 dB beamwidth of the antenna.
+                    </ul>
+                    <ul>For testing <mark>at 1 GHz and above</mark>, place the antenna in a sufficient
+    number of positions such that the entire area of each EUT enclosure
+    and <mark>the first 7 cm of cables and leads</mark> interfacing with the EUT
+    enclosure are within the 3 dB beamwidth of the antenna.
+                    </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="/military/static/images/rs103g/figure_rs103-1.png"></td>
+            <td><img src="/military/static/images/rs103g/figure_rs103-2.png"></td>
+        </tr>
+        <tr>
+            <td><ul>Placement of electric field sensors. Position sensors at same distance as the EUT is
+                located from the transmit antenna and in the plane of the test setup boundary edge
+                closest to the antenna.
+                <li>Position the sensors directly opposite the transmit antenna as
+                shown on Figures RS103-2 and RS103-3, and a <mark>minimum of 30 cm above the ground
+                plane at or below 1 GHz</mark>.</li>
+                <li>Above 1 GHz, place the sensors at height corresponding to
+                the area of the EUT being illuminated.</li><mark>Do not place sensors directly at corners or
+                edges of EUT components.</mark></ul></td>
+            <td><img src="/military/static/images/rs103g/sensor_30mm.png"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}
