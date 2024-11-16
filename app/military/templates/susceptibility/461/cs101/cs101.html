@@ -1,0 +1,122 @@
+{% block content %}
+
+<h1 class="menu">MIL-STD-461F/G<br>
+    5.7 CS101, conducted susceptibility, power leads.</h1>
+
+<div class="mil">
+    <table>
+        <caption>
+            Aplicability:
+        </caption>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td>
+                    This requirement is applicable from <mark>30 Hz to 150 kHz</mark> for equipment and subsystem AC,
+                    limited to current draws ≤ 30 amperes per phase, and DC input power leads, not including returns.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>
+            Limits:
+        </caption>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/figure_cs101_1.png">
+                </td>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/figure_cs101_2.png">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>
+            Setups:
+        </caption>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/figure_cs101_3.png">
+                </td>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/figure_cs101_4.png">
+                    <ul>
+                        <li>For three phase power see "Figure CS101-5" and "Figure CS101-6" in the standard.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>
+            Equipment:
+        </caption>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td><ul>The test equipment shall be as follows:
+                    <li>Signal generator</li>
+                    <li>Power amplifier</li>
+                    <li>Oscilloscope or measurement receiver</li>
+                    <li>Coupling transformer</li>
+                    <li>Capacitor, 10 μF</li>
+                    <li>Isolation transformer for oscilloscope use or transducer for measurement receiver use</li>
+                    <li>Resistor, 0.5 ohm</li>
+                    <li>LISNs</li>
+                </ul>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>
+            Procedures:
+        </caption>
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td><ul>Calibration
+                    <li>Set the signal generator to the <mark>lowest test frequency</mark>.</li>
+                    <li>Increase the applied signal until the oscilloscope or measurement receiver
+                        indicates the voltage level corresponding to the maximum required power level
+                        specified for the limit on Figure CS101-2. Verify the output waveform is
+                        sinusoidal for oscilloscope measurements.</li>
+                    <li><mark>Record the setting of the signal source.</mark></li>
+                    <li>Scan the required frequency range for testing and record the signal source
+                        setting needed to maintain the required power level.</li>
+                </ul>
+                </td>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/equipment_01.png">
+                </td>
+                <td>
+                    <img src="/military/static/images/mil-std-461/cs101/calibration_01.png">
+                </td>
+            </tr>
+            <tr>
+                <td><ul>Testing
+                    <li>Set the signal generator to the lowest test frequency. Increase the signal level
+                        until the required voltage or power level is reached on the power lead. (<mark>NOTE:
+                        Power is limited to the level calibrated.</mark>)</li>
+                    <li> While maintaining at least the required signal level, scan through the required
+                        frequency range at a rate no greater than specified in Table III.</li>
+                </ul>
+                </td>
+                <td><img src="/military/static/images/mil-std-461/cs101/equipment_02.png"></td>
+                <td>
+                    <img src="/military/static/images/mil-std-461/table_3.png"><br>
+                    <img src="/military/static/images/mil-std-461/cs101/test_01.png">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

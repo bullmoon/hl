@@ -147,7 +147,7 @@ th {
 }
 
 .mil caption {
-  caption-side: top !important;
+  caption-side: top;
 }
 
 .mil img {
