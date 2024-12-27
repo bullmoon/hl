@@ -1,13 +1,16 @@
 # HL Project
 
-Welcome to the **HL Project** repository! This project provides a modular Flask-based web application architecture, demonstrating how to structure a project using Flask Blueprints effectively.
+Welcome to the **HL Project** repository! This is a Manual for the EMI testings.
 
 ## Features
 
 - **Modular Design**: Separates different functionalities (e.g., `main`, `military`, `automotive`, `civilian`) using Flask Blueprints.
+- **Blueprint Architecture:** Organized with a clear modular structure.
 - **Customizable Structure**: Easily extendable for adding new sections or features.
 - **Static Files Management**: Demonstrates handling of static files for multiple blueprints.
 - **Dynamic Routing**: Includes examples of routing and URL generation using Flask's `url_for`.
+- **NGINX Integration:** Configured for production-ready deployment.
+- **Gunicorn Support:** Uses Gunicorn for WSGI server management.
 
 ---
 
@@ -31,7 +34,12 @@ hl/
 │   ├── automotive/                # Automotive blueprint
 │   ├── civilian/                  # Civilian blueprint
 │
-├── requirements.txt               # Dependencies
-├── config.py                      # Configuration file
-├── run.py                         # Entry point for the application
-└── README.md                      # This file
+├── venv/                         # Python virtual environment directory
+├── .gitignore                    # Specifies files to ignore in version control
+├── LICENSE                       # License information
+├── README.md                     # Project documentation (this file)
+├── app.py.delete.it              # Old entry point, marked for deletion
+├── config.py                     # Application configuration settings
+├── gunicorn.conf.py              # Gunicorn configuration file
+├── requirements.txt              # Python dependencies
+├── wsgi.py                       # Entry point for Gunicorn (runs the app)
