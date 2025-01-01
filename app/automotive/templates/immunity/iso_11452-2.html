@@ -4,17 +4,70 @@
 
 <div class="atmtv">
     <table>
+        <caption>Description</caption>
         <tbody>
             <tr>
-                <td>Description</td>
-                <td>The International Organization for Standardization (ISO) 11452-2 is a technical standard for the design, manufacture, and use of electronic devices and components.</td>
-            </tr>
-            <tr>
-                <td>Equipment</td>
+                <td></td>
+                <td>The International Organization for Standardization (ISO) 11452-2 is a technical standard for the design, manufacture, and use of electronic devices and components for passenger cars and commercial vehicles.</td>
                 <td><img src="/automotive/static/images/11452-2/cart.png"></td>
             </tr>
         </tbody>
     </table>
-
+    <br>
+    <table>
+        <caption>Calibration</caption>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><ul>
+                    <li>Calibrate with sensor (Narda 604) and store both polarizations in reference file</li>
+                </ul></td>
+                <td><ul>
+                    <li>The table for calibration should be empty, but prepared for test.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td><img src="/automotive/static/images/11452-2/hw_setup.png"></td>
+                <td><img src="/automotive/static/images/immunity/sensor_narda.png"></td>
+                <td><img src="/automotive/static/images/immunity/calibration.png"></td>
+            </tr>
+            <tr>
+                <td><img src="/automotive/static/images/11452-2/calibration_template.png"></td>
+                <td><img src="/automotive/static/images/11452-2/sensor_level_yes.png"></td>
+                <td><img src="/automotive/static/images/11452-2/calibration_test.png"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <caption>Test</caption>
+        <tbody>
+            <tr>
+                <td><ul>
+                    <li>Disable sensor monitoring in the template</li>
+                </ul><br>
+                <img src="/automotive/static/images/11452-2/sensor_level_no.png"></td>
+                <td><ul>
+                    <li>Select reference file</li>
+                </ul><br>
+                <img src="/automotive/static/images/11452-2/select_reference_file.png"></td>
+                <td><ul>
+                    <li>Set the dwell time</li>
+                </ul><br>
+                <img src="/automotive/static/images/11452-2/dwell_time.png"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <caption>Reference information</caption>
+        <tbody>
+            <tr>
+                <td><img src="/automotive/static/images/11452-2/table_b1.png"></td>
+                <td><img src="/automotive/static/images/immunity/table_2.png"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 {% endblock %}

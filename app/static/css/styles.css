@@ -82,6 +82,10 @@ th {
   /* Добавляем отступы */
 }
 
+.atmtv caption {
+  caption-side: top;
+}
+
 .atmtv img {
   display: block;
   /* Преобразует изображения в блочные элементы */
