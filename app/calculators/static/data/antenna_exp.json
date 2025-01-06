@@ -18,5 +18,90 @@
         "Antenna, HL":"4423",
         "Frequency, MHz":"500-1000",
         "Min Antenna Exposed area, m":"0.497"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"1000-2000",
+        "Min Antenna Exposed area, m":"1.349"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"2000-3000",
+        "Min Antenna Exposed area, m":"1.349"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"3000-4000",
+        "Min Antenna Exposed area, m":"1.400"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"4000-5000",
+        "Min Antenna Exposed area, m":"1.041"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"5000-6000",
+        "Min Antenna Exposed area, m":"0.975"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"6000-7000",
+        "Min Antenna Exposed area, m":"0.890"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"7000-8000",
+        "Min Antenna Exposed area, m":"0.708"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"8000-9000",
+        "Min Antenna Exposed area, m":"0.592"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"9000-10000",
+        "Min Antenna Exposed area, m":"0.536"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"10000-11000",
+        "Min Antenna Exposed area, m":"0.536"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"11000-12000",
+        "Min Antenna Exposed area, m":"0.573"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"12000-13000",
+        "Min Antenna Exposed area, m":"0.555"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"13000-14000",
+        "Min Antenna Exposed area, m":"0.480"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"14000-15000",
+        "Min Antenna Exposed area, m":"0.480"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"15000-16000",
+        "Min Antenna Exposed area, m":"0.480"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"16000-17000",
+        "Min Antenna Exposed area, m":"0.480"
+    },
+    {
+        "Antenna, HL":"4114",
+        "Frequency, MHz":"17000-18000",
+        "Min Antenna Exposed area, m":"0.389"
     }
 ]

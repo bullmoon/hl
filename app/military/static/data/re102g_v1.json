@@ -23,4 +23,28 @@
         "Margin, dB": "16",
         "Verdict": "Pass"
     }
+    {
+        "Frequency, Mhz": "197",
+        "Antenna polarization": "Vertical and Horizontal",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    }
+    {
+        "Frequency, Mhz": "990",
+        "Antenna polarization": "Vertical and Horizontal",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    }
+    {
+        "Frequency, Mhz": "17500",
+        "Antenna polarization": "Vertical and Horizontal",
+        "Ampl, dBuV": "",
+        "Limit, dBuV": "24",
+        "Margin, dB": "16",
+        "Verdict": "Pass"
+    }
 ]
