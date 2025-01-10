@@ -47,8 +47,9 @@ hl/
 
 # Services
 ## Gunicorn service
-```plaintext
+
 /etc/systemd/system$ cat gunicorn.service 
+```plaintext
 [Unit]
 Description=Gunicorn service for Flask application
 After=network.target
@@ -57,7 +58,10 @@ After=network.target
 User=www-data
 Group=www-data
 WorkingDirectory=/Project Path/hl
-ExecStart=/Project Path/hl/venv/bin/gunicorn --workers 3 --bind unix:app.sock wsgi:app
+ExecStart=/Project Path/hl/venv/bin/gunicorn --workers 3 --bind unix:app.sock wsgi:app \
+	--access-logfile /var/log/gunicorn/access.log \
+	--error-logfile /var/log/gunicorn/error.log \
+	--log-level debug
 
 Restart=always
 Environment="PATH=/Project Path/hl/venv/bin"
@@ -68,8 +72,9 @@ WantedBy=multi-user.target
 
 # Configurations
 ## NGINX Config
-```Plaintext
+
 /etc/nginx/sites-available$ cat hl 
+```Plaintext
 server {
     listen 80;
     server_name 192.168.1.122;
@@ -85,3 +90,4 @@ server {
         alias /Project Path/hl/app/static/;
     }
 }
+```
