@@ -43,6 +43,7 @@ hl/
 ├── gunicorn.conf.py              # Gunicorn configuration file
 ├── requirements.txt              # Python dependencies
 ├── wsgi.py                       # Entry point for Gunicorn (runs the app)
+```
 
 # Services
 ## Gunicorn service
@@ -63,6 +64,7 @@ Environment="PATH=/Project Path/hl/venv/bin"
 
 [Install]
 WantedBy=multi-user.target
+```
 
 # Configurations
 ## NGINX Config
