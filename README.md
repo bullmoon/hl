@@ -43,3 +43,43 @@ hl/
 ├── gunicorn.conf.py              # Gunicorn configuration file
 ├── requirements.txt              # Python dependencies
 ├── wsgi.py                       # Entry point for Gunicorn (runs the app)
+
+# Services
+## Gunicorn service
+```plaintext
+/etc/systemd/system$ cat gunicorn.service 
+[Unit]
+Description=Gunicorn service for Flask application
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/Project Path/hl
+ExecStart=/Project Path/hl/venv/bin/gunicorn --workers 3 --bind unix:app.sock wsgi:app
+
+Restart=always
+Environment="PATH=/Project Path/hl/venv/bin"
+
+[Install]
+WantedBy=multi-user.target
+
+# Configurations
+## NGINX Config
+```Plaintext
+/etc/nginx/sites-available$ cat hl 
+server {
+    listen 80;
+    server_name 192.168.1.122;
+
+    location / {
+        proxy_pass http://unix:/Project Path/hl/app.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+    location /static/ {
+        alias /Project Path/hl/app/static/;
+    }
+}
