@@ -1,0 +1,44 @@
+[
+    {
+        "Fig. RE102-4": "Frequency, MHz",
+        "Navy Mobile & Army": "Antenna polarization",
+        "2M-18G": "Aml, dBuV",
+        "": "Limit, dBuV"
+    },
+    {
+        "Fig. RE102-4": "2.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "24.0"
+    },
+    {
+        "Fig. RE102-4": "15.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "24.0"
+    },
+    {
+        "Fig. RE102-4": "30.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "24.0"
+    },
+    {
+        "Fig. RE102-4": "200.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "30.0"
+    },
+    {
+        "Fig. RE102-4": "1000.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "44.0"
+    },
+    {
+        "Fig. RE102-4": "18000.000",
+        "Navy Mobile & Army": "Vertical",
+        "2M-18G": "",
+        "": "69.0"
+    }
+]
