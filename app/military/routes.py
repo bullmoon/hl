@@ -14,7 +14,7 @@ def load_data():
 
 VALID_CATEGORIES = {
     "emission": ["ce102", "re102", "re102v2"],
-    "susceptibility": ["rs103", "sec205", "cs101"]
+    "susceptibility": ["rs103", "sec205", "cs101", "cs115"]
 }
 
 @military.route('/')
