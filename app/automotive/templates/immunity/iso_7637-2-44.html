@@ -1,28 +1,35 @@
 {% block content %}
-<div  class="menu">
-<h1>ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
-<p>ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical systems.</p>
-<p></p>
-<table>
-  <tr>
-    <th colspan="2"><img src="/automotive/static/images/7637-2/pulses.png" width="1024"></th>
-  </tr>
-</table>
+<div class="menu">
+  <h1>ISO 7637 Part 2: Electrical transient conduction along supply lines only.</h1>
+  <p>ISO 7637-2:2011 specifies test methods and procedures to ensure the compatibility to conducted electrical
+    transients of equipment installed on passenger cars and commercial vehicles fitted with 12 V or 24 V electrical
+    systems.</p>
+  <p></p>
+  <table>
+    <tr>
+      <th colspan="2"><img src="/automotive/static/images/7637-2/pulses.png" width="1024"></th>
+    </tr>
+  </table>
 </div>
 
 <p></p>
-<div  class="atmtv">
-<table>
+<div class="atmtv">
+  <table>
     <tr>
       <td><img src="/automotive/static/images/7637-2/table1.png"></td>
-      <td>Equipment: <mark>Power supply (13/27V)!</mark> (<del>battery</del>), burst generator HL 0860 (Burst-Generator SFT 400 125 kHz), Wavetek 178 50MHz Waveform Generator, Managed Power Supply "Chroma" or "Elgar", Switch HL 2226</td>
+      <td>Equipment: <mark>Power supply (13/27V)!</mark> (<del>battery</del>), burst generator HL 0860 (Burst-Generator
+        SFT 400 125 kHz), Wavetek 178 50MHz Waveform Generator, Managed Power Supply "Chroma" or "Elgar", Switch HL 2226
+      </td>
     </tr>
     <tr>
       <td><img src="/automotive/static/images/7637-2/severity_level_12v.png"></td>
       <td><img src="/automotive/static/images/7637-2/severity_level_24v.png"></td>
     </tr>
     <tr>
-      <td><img src="/automotive/static/images/7637-2/verification.png"></td>
+      <td>
+        <p><b>Perform verification at 0V DC (Ua=0 V)</b></p><img
+          src="/automotive/static/images/7637-2/verification.png">
+      </td>
       <td><img src="/automotive/static/images/7637-2/test.png"></td>
     </tr>
     <tr>
@@ -31,7 +38,8 @@
     </tr>
     <tr>
       <td><a href="#pulse2a">Pulse 2a</a></td>
-      <td>Simulates transients due to sudden interruption of currents in a device connected in parallel with the EUT due to the inductance of the wiring harness</td>
+      <td>Simulates transients due to sudden interruption of currents in a device connected in parallel with the EUT due
+        to the inductance of the wiring harness</td>
     </tr>
     <tr>
       <td><a href="#pulse2b">Pulse 2b</a> (The same setup as in test "Pulse 4")</td>
@@ -43,167 +51,193 @@
     </tr>
     <tr>
       <td><a href="#pulse4">Pulse 4</a> (The same setup as in test "Pulse 2b")</td>
-      <td><mark>The test pulses 4, 5a, and 5b have been removed from this edition of this part of ISO 7637, since they are specified in ISO 16750-2 and ISO 21848.</mark></td>
+      <td><mark>The test pulses 4, 5a, and 5b have been removed from this edition of this part of ISO 7637, since they
+          are specified in ISO 16750-2 and ISO 21848.</mark></td>
     </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse1">Pulse 1 - Negative Pulse from Parallel Inductive Load</h4>
-<table>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse1">Pulse 1 - Negative Pulse from Parallel Inductive Load</h4>
+  <table>
     <thead></thead>
-      <th>A simulation of transients due to supply disconnection from inductive loads connected in parallel with the DUT, as used in the vicle.<br>
+    <th>A simulation of transients due to supply disconnection from inductive loads connected in parallel with the DUT,
+      as used in the vicle.<br>
       500 pulses (if ISO 7637-2:2004 - 5000 pulses)
       <p></p>
       <p>Pulse 1 with V<sub>a</sub> = 0 V is used to generate pulse 6.</p>
-      <img src="/automotive/static/images/7637-2/setup_pulse_1_photo.png"></th>
-      <th><img src="/automotive/static/images/7637-2/pulse_1_explain.png">
-        Verification
-        <img src="/automotive/static/images/7637-2/ver_pulse_1.png"></th>
+      <img src="/automotive/static/images/7637-2/setup_pulse_1_photo.png">
+    </th>
+    <th><img src="/automotive/static/images/7637-2/pulse_1_explain.png">
+      Verification
+      <img src="/automotive/static/images/7637-2/ver_pulse_1.png">
+    </th>
     <tr>
-      <td><ul>
-        <li>2 Power supplies - for 13/27 V & 150/600 V</li>
-        <li>Wavetek 178 50MHz Waveform Generator</li>
-        <li>2 specific automotive boxes for Pulse 1</li>
-        <li>1 specific box as a load</li>
-        <li>Perform verification at 0V DC (U<sub>a</sub>=0 V) - Increase the voltage on the power supply until the pulse reaches 150/600 V, implement the measurement of t<sub>r</sub> & t<sub>d</sub></li>
-        <li>Apply LV PS, and execute the calibration (U<sub>a</sub>=13/27 V) - measurement t<sub>3</sub>, t<sub>2</sub> & t<sub>1</sub></li>
-        <li>Connect the DUT and save the result plot. Wait for the test to complete.</li>
-      </ul>
-      <img src="/automotive/static/images/7637-2/hl2226_pulse_1.png"></td>
+      <td>
+        <ul>
+          <li>2 Power supplies - for 13/27 V & 150/600 V</li>
+          <li>Wavetek 178 50MHz Waveform Generator</li>
+          <li>2 specific automotive boxes for Pulse 1</li>
+          <li>1 specific box as a load</li>
+          <li>Perform verification at 0V DC (U<sub>a</sub>=0 V) - Increase the voltage on the power supply until the
+            pulse reaches 150/600 V, implement the measurement of t<sub>r</sub> & t<sub>d</sub></li>
+          <li>Apply LV PS, and execute the calibration (U<sub>a</sub>=13/27 V) - measurement t<sub>3</sub>,
+            t<sub>2</sub> & t<sub>1</sub></li>
+          <li>Connect the DUT and save the result plot. Wait for the test to complete.</li>
+        </ul>
+        <img src="/automotive/static/images/7637-2/hl2226_pulse_1.png">
+      </td>
       <td><img src="/automotive/static/images/7637-2/wavetek-178.jpg"><br>
-      <dl>
-        <dt>Wavetek generator configuration:</dt>
-        <dd>- set "Function" to "Square"</dd>
-        <dd>- set "Frequency" to 5 Hz </dd>
-        <dd>- set "Amplitude" to 12 V (up to 18 V), p-p</dd>
-        <dd>- set "Mode" to "Continue"</dd>
-        <dt>Connect Wavetek to the generator HL 2226</dt>
-      </dl></td>
+        <dl>
+          <dt>Wavetek generator configuration:</dt>
+          <dd>- set "Function" to "Square"</dd>
+          <dd>- set "Frequency" to 5 Hz </dd>
+          <dd>- set "Amplitude" to 12 V (up to 18 V), p-p</dd>
+          <dd>- set "Mode" to "Continue"</dd>
+          <dt>Connect Wavetek to the generator HL 2226</dt>
+        </dl>
+      </td>
     </tr>
     <tr>
-        <td><img src="/automotive/static/images/7637-2/table2.png"></td>
-        <td><img src="/automotive/static/images/7637-2/figure5.png"></td>
+      <td><img src="/automotive/static/images/7637-2/table2.png"></td>
+      <td><img src="/automotive/static/images/7637-2/figure5.png"></td>
     </tr>
     <tr>
-    <th>
-      <ul>Please, save the following plots:
-      <li>Verification - <mark>U<sub>s</sub>, t<sub>r</sub>, t<sub>d</sub>, t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub></mark></li>
-      <li>Verification under load (load instead of EUT) - <mark>U<sub>s</sub>, t<sub>d</sub></mark></li>
-      <li>Calibration (without, but with U<sub>a</sub> 13/27 V) - <mark>U<sub>s</sub></mark></li>
-      <li>EUT response - <mark>plot with multiple pulses, and plot with a single pulse</mark></li>
-    </ul></th>
-    <th><img src="/equipment/static/images/hl_2362.jpg"></th>
+      <th>
+        <ul>Please, save the following plots:
+          <li>Verification - <mark>U<sub>s</sub>, t<sub>r</sub>, t<sub>d</sub>, t<sub>1</sub>, t<sub>2</sub>,
+              t<sub>3</sub></mark></li>
+          <li>Verification under load (load instead of EUT) - <mark>U<sub>s</sub>, t<sub>d</sub></mark></li>
+          <li>Calibration (without, but with U<sub>a</sub> 13/27 V) - <mark>U<sub>s</sub></mark></li>
+          <li>EUT response - <mark>plot with multiple pulses, and plot with a single pulse</mark></li>
+        </ul>
+      </th>
+      <th><img src="/equipment/static/images/hl_2362.jpg"></th>
     </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse2a">Pulse 2a - Positive Pulse from harness Inductance</h4>
-<table>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse2a">Pulse 2a - Positive Pulse from harness Inductance</h4>
+  <table>
     <thead></thead>
-    <th>Simulates transients due to wiring harness inductance when current is interrupted in a device connected in parallel with the DUT.</th>
+    <th>Simulates transients due to wiring harness inductance when current is interrupted in a device connected in
+      parallel with the DUT.</th>
     <th><img src="/automotive/static/images/7637-2/pulse_2a_explain.png"></th>
     <tr>
       <td><img src="/automotive/static/images/7637-2/hl2226_pulse_2a.png"></td>
-      <td><ul>Pay attention to the special boxs are appropriate for 12 and 24 V</ul>
-        <img src="/automotive/static/images/7637-2/wavetek-178.jpg"></td>
+      <td>
+        <ul>Pay attention to the special boxs are appropriate for 12 and 24 V</ul>
+        <img src="/automotive/static/images/7637-2/wavetek-178.jpg">
+      </td>
     </tr>
     <tr>
-        <td><img src="/automotive/static/images/7637-2/table3.png"><br>
+      <td><img src="/automotive/static/images/7637-2/table3.png"><br>
         <ul>TL 81000-2018:
           <li>Maximum pulse repetition frequency: 5 Hz (t1 = 0.2 s).</li>
           <li>5000 pulses, U<sub>s</sub>= +75 V, (check the tables 29 and 30 in 5.4.4.1.3 for other parameters)</li>
-        </ul></td>
-        <td><img src="/automotive/static/images/7637-2/figure6.png"></td>
-      </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse2b">Pulse 2b - Positive Motor Run Down Pulse</h4>
-<table>
-  <thead></thead>
-  <th>Simulates transients from DC motors acting as generators after the ignition is switched off.</th>
-  <th><img src="/automotive/static/images/7637-2/pulse_2b_explain.png"></th>
-  <tr>
-    <td><p>to edit</p>
-      <ul>Use the specific software to program pulse steps.
-      <li>Open the XXX software</li>
-      <li>Wait for connection to complete</li>
-      <li>Switch to DC mode</li>
-      <li>Use phase 2 (from 06.2024 phase 1 isn't available)</li>
-      <li>Select "list", and program any pulse steps</li>
-      <li>Switch on the power</li>
-      <li>Set number of pulses to 10 and turn on the programmed steps</li>
-    </ul></td>
-    <td><img src="/automotive/static/images/7637-2/chroma.png"></td>
-  </tr>
-  <tr>
-    <td><img src="/automotive/static/images/7637-2/table4.png"></td>
-    <td><img src="/automotive/static/images/7637-2/figure7.png"></td>
-  </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse3a">Pulse 3a - Negative Switching Transients</h4>
-<table>
-  <thead></thead>
-  <th>Simulates negative arcing transients that occur as switches/relays turn on/off</th>
-  <th><img src="/automotive/static/images/7637-2/pulse_3a_explain.png"></th>
+        </ul>
+      </td>
+      <td><img src="/automotive/static/images/7637-2/figure6.png"></td>
+    </tr>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse2b">Pulse 2b - Positive Motor Run Down Pulse</h4>
+  <table>
+    <thead></thead>
+    <th>Simulates transients from DC motors acting as generators after the ignition is switched off.</th>
+    <th><img src="/automotive/static/images/7637-2/pulse_2b_explain.png"></th>
+    <tr>
+      <td>
+        <p>to edit</p>
+        <ul>Use the specific software to program pulse steps.
+          <li>Open the XXX software</li>
+          <li>Wait for connection to complete</li>
+          <li>Switch to DC mode</li>
+          <li>Use phase 2 (from 06.2024 phase 1 isn't available)</li>
+          <li>Select "list", and program any pulse steps</li>
+          <li>Switch on the power</li>
+          <li>Set number of pulses to 10 and turn on the programmed steps</li>
+        </ul>
+      </td>
+      <td><img src="/automotive/static/images/7637-2/chroma.png"></td>
+    </tr>
+    <tr>
+      <td><img src="/automotive/static/images/7637-2/table4.png"></td>
+      <td><img src="/automotive/static/images/7637-2/figure7.png"></td>
+    </tr>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse3a">Pulse 3a - Negative Switching Transients</h4>
+  <table>
+    <thead></thead>
+    <th>Simulates negative arcing transients that occur as switches/relays turn on/off</th>
+    <th><img src="/automotive/static/images/7637-2/pulse_3a_explain.png"></th>
     <tr>
       <td><img src="/automotive/static/images/7637-2/figure8.png"></td>
       <td>Verification (without U<sub>a</sub>):<img src="/automotive/static/images/7637-2/tablec5.png"><br>
         Test (after calibration with U<sub>a</sub>):<img src="/automotive/static/images/7637-2/table5.png"></td>
     </tr>
     <tr>
-        <td>Increase the voltage on the generator to ~1.6 kV to get a pulse of ~200 V.<br>
-          Duration of 1 hour for each polarization<br>
-          <img src="/automotive/static/images/7637-2/gnrtr.png"><br>
-          Verification (without U<sub>a</sub>, only pulse. Open circut, and with 50 Ohm load - see the table 5, table 6)
-          <img src="/automotive/static/images/7637-2/pulse3ab_verification_50_ohm.png"></td>
-        <td><img src="/automotive/static/images/7637-2/burstdef.png"></td>
+      <td>Increase the voltage on the generator to ~1.6 kV to get a pulse of ~200 V.<br>
+        Duration of 1 hour for each polarization<br>
+        <img src="/automotive/static/images/7637-2/gnrtr.png"><br>
+        Verification (without U<sub>a</sub>, only pulse. Open circut, and with 50 Ohm load - see the table 5, table 6)
+        <img src="/automotive/static/images/7637-2/pulse3ab_verification_50_ohm.png">
+      </td>
+      <td><img src="/automotive/static/images/7637-2/burstdef.png"></td>
     </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse3b">Pulse 3b - Positive Switching Transients</h4>
-<table>
-  <thead></thead>
-  <th>Simulates positive arcing transients that occur as switches/relays turn on/off</th>
-  <th><img src="/automotive/static/images/7637-2/pulse_3b_explain.png"></th>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse3b">Pulse 3b - Positive Switching Transients</h4>
+  <table>
+    <thead></thead>
+    <th>Simulates positive arcing transients that occur as switches/relays turn on/off</th>
+    <th><img src="/automotive/static/images/7637-2/pulse_3b_explain.png"></th>
     <tr>
       <td><img src="/automotive/static/images/7637-2/figure9.png"></td>
       <td>Verification (without U<sub>a</sub>):<img src="/automotive/static/images/7637-2/tablec6.png"><br>
-          Test (after calibration with U<sub>a</sub>):<img src="/automotive/static/images/7637-2/table6.png"></td>
+        Test (after calibration with U<sub>a</sub>):<img src="/automotive/static/images/7637-2/table6.png"></td>
     </tr>
-</table>
-<p></p>
-<h4 class="menu" id="pulse4">Pulse 4 Cold Crank Voltage Drop</h4>
-<table>
-  <thead></thead>
-  <th>The voltage reduction caused by energizing the starter motor circuits of the internal combustion engines</th>
-  <th><img src="/automotive/static/images/7637-2/pulse_4_explain.png"></th>
-  <tr>
-    <td><p>to edit</p>
-      <ul>Use the specific software to program pulse steps.
-        <li>Swich on all the equipment in the cart</li>
-        <li>Open the "SWPS" software</li>
-        <li>Wait for GPIB connection to complete (If the software doesn't respond, physically delete all user sequences on the "ELGAR" device.)</li>
-        <li>Switch to the tab "...", and load software settings (e.g. "automotive_12_v.prg)</li>
-        <li>Switch to the tab "sequence", and load sequence config from HDD (algorithm: hdd->software->device RAM)</li>
-        <li>Set the program behave - loop, repeat, etc</li>
-        <li>(parallel mode must be disabled!) Make any changes and upload the config <b>to SmartWave</b> (ELGAR equipmant works with internal memory store only)</li>
-        <li>Switch on the "Output" button (tab "..." settings will be applied)</li>
-        <li>Switch on the "Sequence" (a window for selecting the uploaded configuration will be open)</li>
-        <li>Observe the process (The software doesn't contain any monitor system)</li>
-    </ul></td>
-    <td><img src="/automotive/static/images/7637-2/elgar-powersupplies.jpg"></td>
-  </tr>
-  <tr>
-    <td><p>Aplicable for ISO 7637-2:2004(E) only</p>
-      This pulse simulates supply voltage reduction caused by energizing the starter-motor circuits of internal combustion engines, excluding spikes associated with starting
-      <p>Parameters</p>
-      <img src="/automotive/static/images/7637-2/figure10.png">
-    </td>
-    <td>D.3.4 Test pulse 4 — 12 V and 24 V system
-      <p>No pulse verification is available.</p>
-      <img src="/automotive/static/images/7637-2/table1_2.png"><br>
-      <img src="/automotive/static/images/7637-2/table8.png"><br>
-      <img src="/automotive/static/images/7637-2/tablea1.png"></td>
-  </tr>
-</table>
+  </table>
+  <p></p>
+  <h4 class="menu" id="pulse4">Pulse 4 Cold Crank Voltage Drop</h4>
+  <table>
+    <thead></thead>
+    <th>The voltage reduction caused by energizing the starter motor circuits of the internal combustion engines</th>
+    <th><img src="/automotive/static/images/7637-2/pulse_4_explain.png"></th>
+    <tr>
+      <td>
+        <p>to edit</p>
+        <ul>Use the specific software to program pulse steps.
+          <li>Swich on all the equipment in the cart</li>
+          <li>Open the "SWPS" software</li>
+          <li>Wait for GPIB connection to complete (If the software doesn't respond, physically delete all user
+            sequences on the "ELGAR" device.)</li>
+          <li>Switch to the tab "...", and load software settings (e.g. "automotive_12_v.prg)</li>
+          <li>Switch to the tab "sequence", and load sequence config from HDD (algorithm: hdd->software->device RAM)
+          </li>
+          <li>Set the program behave - loop, repeat, etc</li>
+          <li>(parallel mode must be disabled!) Make any changes and upload the config <b>to SmartWave</b> (ELGAR
+            equipmant works with internal memory store only)</li>
+          <li>Switch on the "Output" button (tab "..." settings will be applied)</li>
+          <li>Switch on the "Sequence" (a window for selecting the uploaded configuration will be open)</li>
+          <li>Observe the process (The software doesn't contain any monitor system)</li>
+        </ul>
+      </td>
+      <td><img src="/automotive/static/images/7637-2/elgar-powersupplies.jpg"></td>
+    </tr>
+    <tr>
+      <td>
+        <p>Aplicable for ISO 7637-2:2004(E) only</p>
+        This pulse simulates supply voltage reduction caused by energizing the starter-motor circuits of internal
+        combustion engines, excluding spikes associated with starting
+        <p>Parameters</p>
+        <img src="/automotive/static/images/7637-2/figure10.png">
+      </td>
+      <td>D.3.4 Test pulse 4 — 12 V and 24 V system
+        <p>No pulse verification is available.</p>
+        <img src="/automotive/static/images/7637-2/table1_2.png"><br>
+        <img src="/automotive/static/images/7637-2/table8.png"><br>
+        <img src="/automotive/static/images/7637-2/tablea1.png">
+      </td>
+    </tr>
+  </table>
 </div>
 {% endblock %}
