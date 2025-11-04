@@ -1,0 +1,75 @@
+{
+    "pulse_1": {
+      "title": "Pulse 1",
+      "description": "Simulation of supply voltage interruption by disconnection of battery from inductive load.",
+      
+      "ua_values": {
+        "12": 12,
+        "24": 24
+      },
+  
+      "severity_levels": {
+        "12": {
+          "I": { "us": -75, "pulses": 500 },
+          "II": { "us": -75, "pulses": 500 },
+          "III": { "us": -112, "pulses": 500 },
+          "IV": { "us": -150, "pulses": 500 }
+        },
+        "24": {
+          "I": { "us": -300, "pulses": 500 },
+          "II": { "us": -300, "pulses": 500 },
+          "III": { "us": -450, "pulses": 500 },
+          "IV": { "us": -600, "pulses": 500 }
+        }
+      },
+  
+      "repetition_time": {
+        "min": 0.5,
+        "max": 5.0
+      },
+  
+      "stages": {
+        "verification": {
+          "parameters": {
+            "Tr": "0.5-1 µs",
+            "Td": "2 ms",
+            "T1": "0.02 ms",
+            "T2": "0.4 ms",
+            "T3": "400 ms",
+            "Us": "-150V"
+          },
+          "source_table": "Table C.1"
+        },
+  
+        "verification_under_load": {
+          "load_resistance": {
+            "12": "10Ω",
+            "24": "50Ω"
+          },
+          "expected_voltage_drop": "50%",
+          "source_table": "Table C.1"
+        },
+  
+        "calibration": {
+          "ua_reference": {
+            "12": "12V",
+            "24": "24V"
+          },
+          "us_reference": {
+            "12": "-150V",
+            "24": "-300V"
+          },
+          "source_table": "Table 3"
+        },
+  
+        "test": {
+          "connection": "EUT",
+          "notes": [
+            "Use specified pulse count from severity level",
+            "Repeat every 0.5–5s"
+          ]
+        }
+      }
+    }
+  }
+  

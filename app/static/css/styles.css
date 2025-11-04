@@ -173,3 +173,30 @@ th {
   box-shadow: 0 10px 24px rgba(54, 63, 33, 1);
   /* Увеличивает тень при наведении */
 }
+
+/* Scroll to top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  left: auto;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  background-color: #1B263B; /* Navy color */
+  color: #edf2f4; /* White text/icon color */
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  opacity: 1;
+  background-color: #2E3B55; /* Lighter navy for hover */
+}
