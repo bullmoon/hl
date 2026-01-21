@@ -48,37 +48,61 @@
     </table>
     <table>
         <caption>
-            Procedures:
+            5.12.3.4 Procedures.
         </caption>
         <thead></thead>
         <tbody>
             <tr>
                 <td>
                     <ul>Calibration
-                        <li>blablabla<mark>blablabla</mark>.</li>
-                        <li>blablabla.</li>
-                        <li><mark>blablabla.</mark></li>
-                        <li>Scblablabla.</li>
+                        <li>Set the signal generator to 10 kHz, unmodulated.</li>
+                        <li>Increase the applied signal until measurement receiver A indicates the current level
+                            specified in the applicable limit exists in the center conductor of the calibration fixture.
+                        </li>
+                        <li>Record the "forward power" to the injection probe indicated on measurement receiver B.</li>
+                        <li>Scan the frequency band from 10 kHz to 200 MHz and record the forward power needed to
+                            maintain the required current amplitude.</li>
                     </ul>
                 </td>
                 <td>
-                    <img src="/military/static/images/mil-std-461/cs101/equipment_01__.png">
+                    <ul>Verification
+                        <li>Set the signal generator to 10 kHz (modulation is optional and should not have an effect).
+                        </li>
+                        <li>Apply the forward power level determined under 5.12.3.4b(4) to the injection probe while
+                            monitoring the induced current on the monitor probe.</li>
+                        <li>Scan the required frequency range with minimal dwell times and step sizes twice those in
+                            Table II while maintaining the forward power level at the calibrated level determined under
+                            5.12.3.4b(4). Verify that the forward power follows the calibration and that the developed
+                            current is within a 3 dB tolerance of the current test limit.</li>
+                    </ul>
                 </td>
                 <td>
-                    <img src="/military/static/images/mil-std-461/cs101/calibration_01__.png">
+                    <ul>Testing
+                        <li>Set the signal generator to 10 kHz with 1 kHz pulse modulation, 50% duty cycle. Verify that
+                            the modulation is present on the drive signal for each signal generator/modulation source
+                            combination. Ensure that the modulation frequency, waveform and depth (40 dB minimum from
+                            peak to baseline) are correct.</li>
+                        <li>Apply the forward power level determined under 5.12.3.4b(4) to the injection probe while
+                            monitoring the induced current. For shielded cables or low impedance circuits, it may be
+                            preferable to increase the signal gradually to limit the current.</li>
+                        <li>Scan the required frequency range in accordance with 4.3.10.4.1 and Table III while
+                            maintaining the forward power level at the calibration level determined under 5.12.3.4b(4),
+                            or the maximum current level for the applicable limit, whichever is less stringent.</li>
+                        <li>Monitor the EUT for degradation of performance during testing.</li>
+                        <li>Whenever susceptibility is noted, determine the threshold level in accordance with
+                            4.3.10.4.3.</li>
+                        <li> For EUTs with redundant cabling for safety critical reasons such as multiple data buses,
+                            use simultaneous multi-cable injection techniques.</li>
+                    </ul>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <ul>Testing
-                        <li>blablabla. (<mark>NOTE:
-                                blablabla.</mark>)</li>
-                        <li> blablabla.</li>
-                    </ul>
+                    <img src="/military/static/images/mil-std-461/cs101/equipment_02__.png">
                 </td>
-                <td><img src="/military/static/images/mil-std-461/cs101/equipment_02__.png"></td>
+                <td></td>
                 <td>
-                    <img src="/military/static/images/mil-std-461/table_3__.png"><br>
+                    <img src="/military/static/images/mil-std-461/g/table_6.png"><br>
                     <img src="/military/static/images/mil-std-461/cs101/test_01__.png">
                 </td>
             </tr>
