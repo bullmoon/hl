@@ -2,14 +2,14 @@
 
 {% block content %}
 
-    {% set test_templates = {
-        "rs103": "susceptibility/rs103/mil-std-461-rs103.html",
-        "sec205": "susceptibility/rtca/sec-205.html",
-        "cs101": "susceptibility/461/cs101/cs101.html",
-        "cs115": "susceptibility/461/cs115/cs115.html"
-    } %}
+{% set test_templates = {
+"rs103": "susceptibility/rs103/mil-std-461-rs103.html",
+"sec205": "susceptibility/rtca/sec-205.html",
+"cs101": "susceptibility/461/cs101/cs101.html",
+"cs114": "susceptibility/461/cs114/cs114.html",
+"cs115": "susceptibility/461/cs115/cs115.html"
+} %}
 
-    {% include test_templates.get(test, "military_susceptibility.html") %}
+{% include test_templates.get(test, "military_susceptibility.html") %}
 
 {% endblock %}
-

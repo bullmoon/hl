@@ -7,20 +7,25 @@ from . import military
 DATA_FILE = os.path.join(military.static_folder, 'data', 're102g_v1.json')
 
 # Function to load JSON data
+
+
 def load_data():
     """Loads data from the JSON file."""
     with open(DATA_FILE, 'r') as f:
         return json.load(f)
 
+
 VALID_CATEGORIES = {
     "emission": ["ce102", "re102", "re102v2"],
-    "susceptibility": ["rs103", "sec205", "cs101", "cs115"]
+    "susceptibility": ["rs103", "sec205", "cs101", "cs114", "cs115"]
 }
+
 
 @military.route('/')
 def military_default():
     """Default route."""
     return render_template('military.html')
+
 
 @military.route('/<category>')
 def military_index(category):
@@ -29,7 +34,8 @@ def military_index(category):
         return render_template('military.html', category=category)
     else:
         return render_template('military.html', category=None)
-    
+
+
 @military.route('/<category>/<test>')
 def military_test(category, test):
     """Route for test in categories."""
@@ -38,6 +44,7 @@ def military_test(category, test):
         data = load_data()  # Load data from JSON
         template = f"military_{category}_test.html"
         # return render_template(template, test=test)
-        return render_template(template, test=test, data=data)  # Pass JSON data to template
+        # Pass JSON data to template
+        return render_template(template, test=test, data=data)
     else:
         return render_template('military.html', test=None)
