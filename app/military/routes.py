@@ -17,7 +17,7 @@ def load_data():
 
 VALID_CATEGORIES = {
     "emission": ["ce102", "re102", "re102v2"],
-    "susceptibility": ["rs103", "sec205", "cs101", "cs114", "cs115"]
+    "susceptibility": ["rs103", "cs101", "cs114", "cs115", "sec204", "sec205"]
 }
 
 

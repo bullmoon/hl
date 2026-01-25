@@ -1,0 +1,135 @@
+{% block content %}
+
+<h1 class="menu">RTCA/DO-160G<br>
+  Section 20.4 Conducted Susceptibility (CS) Test</h1>
+Section 1<br>
+Purpose and Applicability<br>
+Section 2<br>
+Definitions of Terms<br>
+Section 3<br>
+Conditions of Tests
+<div class="mil">
+  <table>
+    <caption>
+      Frequency range
+    </caption>
+    <tr>
+      <td>Radiated susceptibility tests from 100 MHz to 18 GHz</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <caption>
+      The <mark>dwell time</mark> at each test frequency shall be <mark>at least one second</mark>, exclusive of test
+      equipment settling time.
+    </caption>
+    <thead>
+      <tr>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-6.png"></td>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-10b.png"></td>
+        <td><img src="/military/static/images/rtca-do-160/square_duty_cycle.png"></td>
+      </tr>
+  </table>
+  <br>
+  <table>
+    <caption>
+      Note that all levels are "<mark>peak rms</mark>" as defined in Section 20.3.c and Figure 20-5
+    </caption>
+    <thead>
+      <tr>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-5a.png"></td>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-5b.png"></td>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-5c.png"></td>
+      </tr>
+  </table>
+  <br>
+  <table>
+    <caption>
+      Setup
+    </caption>
+    <thead>
+      <tr>
+        <td><img src="/military/static/images/rtca-do-160/figure_20-2.png"></td>
+        <td>
+          <ul>
+            <li>[20.3 a.] The EUT shall be set up <mark>on a ground plane</mark>.</li>
+            <li>[20.3 a. (5)] Cables shall be bundled in a manner similar to that of aircraft installations and the
+              lowest point of the cable bundle supported at <mark>a minimum height of 50 mm above the ground
+                plane</mark>.</li>
+            <li>[20.3 a. (5)] Unless otherwise specified, cable lengths shall be <mark>at least 3.3 m</mark>.</li>
+            <li>[20.3 a. (5)] When the length of an interconnecting cable bundle is greater than the test bench, the
+              cable bundle should be arranged with the <mark>excess length zigzagged at the back of the test
+                bench</mark> approximately 50 mm above the ground plane.</li>
+            <li>[20.3 a. (6)] Under these conditions, the length of the leads <mark>to the LISNs shall be 1.0m
+                +/-10cm</mark> unless otherwise specified in the applicable equipment specification.</li>
+            <li>[20.3 a. (6)] When the return lead is a local ground (<mark>less than 1 meter length</mark>), this lead
+              may be grounded directly to the test bench, in accordance with the applicable installation and interface
+              control drawings or diagrams.</li>
+          </ul>
+          <img src="/military/static/images/rtca-do-160/high_antenna.png"><br>
+          <img src="/military/static/images/rtca-do-160/table_20-3.png">
+        </td>
+      </tr>
+  </table>
+  <br>
+  <table>
+    <caption>
+      EMC32 configuration
+    </caption>
+    <tr>
+      <td><img src="/military/static/images/rtca-do-160/emc32_sw_50_percent_dutycycle.png"></td>
+      <td><img src="/military/static/images/rtca-do-160/emc32_4_percent_dutycycle.png"></td>
+      <td><img src="/military/static/images/rtca-do-160/emc32_1_herz_onoff_50_percent_dutycycle.png"></td>
+    </tr>
+    <tr>
+      <td><img src="/military/static/images/rtca-do-160/emc32_rms.png"></td>
+      <td><img src="/military/static/images/rtca-do-160/emc32_calibration.png"></td>
+      <td><img src="/military/static/images/rtca-do-160/emc32_modulation_level.png"></td>
+    </tr>
+  </table>
+  <table>
+    <caption>
+      Note that all levels are "<mark>peak rms</mark>" as defined in Section 20.3.c and Figure 20-5
+    </caption>
+    <tr>
+      <td>
+        <ul>For category <mark>R</mark> use the following levels and modulations:
+          <li>From 100 MHz to 400 MHz use 20 V/m CW. Also use 20 V/m with 1 kHz square wave modulation with at least 90%
+            depth.</li>
+          <li>From 400 MHz to 8 GHz, use 150 V/m pulse modulated at 4% duty cycle and 1 kHz pulse repetition frequency.
+            Switch the signal on and off at a 1 Hz rate and 50% duty cycle to simulate the effect of rotational radars.
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>For categories <mark>S, T, W and Y</mark>, use the following modulations:
+          <li>From 100 MHz to the upper frequency limit in Figure 20-10, use CW as well as 1 kHz square wave modulation
+            with at least 90% depth. Also consider using additional modulations associated with the EUT such as clock,
+            data, IF, internal processing, or modulation frequencies.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul>For categories <mark>B, D, F, G, & L</mark> use the following modulations:
+          <li>When testing to the appropriate SW/CW levels from Table 20-3, use CW and a 1 kHz square wave modulation
+            with at least 90% depth from 100 MHz to 18 GHz. Also consider using additional modulations associated with
+            the EUT such as clock, data, IF, internal processing or modulation frequencies.</li>
+          <li>From 400 MHz to 4 GHz, use the appropriate pulse modulated (PM) test level with a 4 &micro;s pulse width
+            (or greater) and 1 kHz pulse repetition frequency. From 4 GHz to 18 GHz, use the appropriate pulse modulated
+            (PM) test level with a 1 &micro;s pulse width (or greater) and 1 kHz pulse repetition frequency. Especially
+            consider switching the signal on and off at a 1 Hz rate and 50% duty cycle for an EUT which may have a low
+            frequency response (e.g. flight control equipment)</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          For <mark>all categories</mark>: Above 1 GHz it is permissible to use SW modulation at 1.42 times the CW field
+          strength requirement to satisfy both CW and SW requirements simultaneously (e.g. 142 V/m SW, 50% duty cycle to
+          qualify 100 V/m CW and SW).
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+{% endblock %}
