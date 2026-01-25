@@ -43,9 +43,6 @@ Conditions of Tests
           through the directional coupler to the injection probe at 10 kHz until the current or power measured on
           amplitude measurement <mark>instrument #1</mark> indicates the resulting current or power into the calibration
           fixture for the selected category of Figure 20-6.</td>
-        <td><mark>Instrument #1/#2</mark> - powermeter/reciever or powermeter/powermeter.<br>
-          <img src="/military/static/images/rtca-do-160/powermeter.png">
-        </td>
         <td>Scan the frequency band (unmodulated) while recording forward power on amplitude measurement
           <mark>instrument #2</mark> and maintaining power amplitudes on amplitude measurement <mark>instrument
             #1</mark> per Table 20-2 and/or Figure 20-6 from 10 kHz to 400 MHz for the proper probe. The forward power
@@ -53,15 +50,26 @@ Conditions of Tests
           20.4.d.
         </td>
       </tr>
+      <tr>
+        <td><mark>Instrument #1/#2</mark> - powermeter/reciever or powermeter/powermeter.<br>
+          <img src="/military/static/images/rtca-do-160/powermeter.png">
+        </td>
+      </tr>
   </table>
   <br>
   <table>
     <caption>
-      Setup
+      c. CS Test Setup
     </caption>
     <thead>
       <tr>
-        <td></td>
+        <td>Set up the EUT, wiring, associated interface circuitry, and test equipment per Figure 20-9. For test setups
+          with shielded cables which include in-line connectors (e.g. aircraft installation stanchion or bulkhead
+          disconnects), the in-line shield terminations must be lifted from ground to allow the CS current to flow on
+          the shield for a minimum distance of 3m. Install the induced current monitor probe five centimeters from the
+          EUT. If the EUT connector plus backshell length exceeds five centimeters, the probe shall be placed as close
+          to the connector backshell as possible and the position noted. Support and center the probe. Install the
+          injection probe five centimeters from the face of the monitor probe.</td>
         <td>
           <ul>
             <li>[20.3 a.] The EUT shall be set up <mark>on a ground plane</mark>.</li>
@@ -84,6 +92,20 @@ Conditions of Tests
       </tr>
   </table>
   <br>
+  <table>
+    <caption>
+      d. CS Test Procedure
+    </caption>
+    <tr>
+      <td>Set the signal generator to 10 kHz. Adjust and control the forward power to achieve the induced current on the
+        cable bundle for the selected category level of Table 20-2, and/or Figure 20-6. When necessary, limit the
+        forward power to <mark>not more than 6 dB above the calibration value</mark> determined during the probe
+        calibration procedure in Section 20.4.b. Scan the frequency range at the proper bundle current level without
+        exceeding the forward power limit. Record the induced current and applied forward power in the test report.</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
   <table>
     <caption>
       EMC32 configuration
